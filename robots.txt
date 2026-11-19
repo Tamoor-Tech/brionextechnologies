@@ -1,0 +1,8 @@
+# ==============================================================================
+# BRIONEX Technologies -- Search Engine Directives
+# ==============================================================================
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://brionextechnologies.com/sitemap.xml

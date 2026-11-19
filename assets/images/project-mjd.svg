@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" fill="none">
+  <defs>
+    <linearGradient id="mjdBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091428"/>
+      <stop offset="100%" stop-color="#040914"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142442"/>
+      <stop offset="100%" stop-color="#0c182c"/>
+    </linearGradient>
+    <linearGradient id="accentMjd" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e599"/>
+      <stop offset="100%" stop-color="#00b4d8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="500" rx="16" fill="url(#mjdBg)" stroke="#1a2e4c" stroke-width="2"/>
+
+  <!-- Browser Window Chrome -->
+  <rect x="0" y="0" width="800" height="44" fill="#0d1b30" rx="16"/>
+  <rect x="0" y="32" width="800" height="12" fill="#0d1b30"/>
+  <circle cx="28" cy="22" r="5" fill="#ef4444"/>
+  <circle cx="46" cy="22" r="5" fill="#f59e0b"/>
+  <circle cx="64" cy="22" r="5" fill="#10b981"/>
+  
+  <!-- URL Bar -->
+  <rect x="100" y="10" width="460" height="24" rx="6" fill="#071020" stroke="#1c3050"/>
+  <text x="120" y="26" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">
+    https://mjdfunding.vercel.app
+  </text>
+  <rect x="532" y="14" width="16" height="16" rx="4" fill="#00e599" fill-opacity="0.2"/>
+
+  <!-- Client Header in Mockup -->
+  <rect x="40" y="68" width="160" height="26" rx="4" fill="#1a2e4c"/>
+  <text x="50" y="86" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="800" fill="#ffffff">MJD FUNDING</text>
+  <rect x="560" y="68" width="70" height="24" rx="4" fill="#162944"/>
+  <rect x="642" y="68" width="118" height="24" rx="4" fill="url(#accentMjd)"/>
+  <text x="660" y="84" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#040914">Apply For Funding</text>
+
+  <!-- Hero Content in Mockup -->
+  <text x="40" y="142" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800" fill="#f8fafc">
+    Fast, Transparent Capital
+  </text>
+  <text x="40" y="176" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800" fill="url(#accentMjd)">
+    For Expanding Businesses.
+  </text>
+  <text x="40" y="210" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#94a3b8">
+    Institutional-grade funding solutions engineered to empower ambitious commercial operations.
+  </text>
+
+  <!-- Metric Badges -->
+  <g transform="translate(40, 240)">
+    <!-- Metric 1 -->
+    <rect width="210" height="96" rx="10" fill="url(#cardGrad)" stroke="#1a3258"/>
+    <text x="18" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#00e599">WORKING CAPITAL</text>
+    <text x="18" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="800" fill="#ffffff">$25k – $5M+</text>
+    <text x="18" y="84" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#64748b">Flexible repayment structures</text>
+
+    <!-- Metric 2 -->
+    <rect x="230" width="210" height="96" rx="10" fill="url(#cardGrad)" stroke="#1a3258"/>
+    <text x="248" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#00b4d8">SPEED TO DECISION</text>
+    <text x="248" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="800" fill="#ffffff">24–48 Hours</text>
+    <text x="248" y="84" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#64748b">Streamlined verification</text>
+
+    <!-- Metric 3 -->
+    <rect x="460" width="260" height="96" rx="10" fill="url(#cardGrad)" stroke="#1a3258"/>
+    <text x="478" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#00e599">CAPITAL PROGRAMS</text>
+    <text x="478" y="66" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="800" fill="#ffffff">Term &amp; Revenue</text>
+    <text x="478" y="84" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#64748b">Built for scale</text>
+  </g>
+
+  <!-- Calculator / Interactive Mock Element -->
+  <g transform="translate(40, 360)">
+    <rect width="720" height="105" rx="12" fill="#0a1526" stroke="#162944"/>
+    <text x="24" y="34" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Interactive Capital Estimator Tool</text>
+    <rect x="24" y="52" width="460" height="8" rx="4" fill="#142442"/>
+    <rect x="24" y="52" width="310" height="8" rx="4" fill="url(#accentMjd)"/>
+    <circle cx="334" cy="56" r="8" fill="#ffffff" stroke="#00e599" stroke-width="2"/>
+    <text x="24" y="82" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#94a3b8">Estimated funding amount:</text>
+    <text x="175" y="82" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#00e599">$350,000</text>
+    
+    <rect x="540" y="32" width="156" height="42" rx="6" fill="#10b981"/>
+    <text x="564" y="58" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#040914">Check Eligibility</text>
+  </g>
+</svg>

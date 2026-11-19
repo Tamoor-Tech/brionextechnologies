@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" fill="none">
+  <defs>
+    <linearGradient id="melBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14110e"/>
+      <stop offset="100%" stop-color="#090807"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0a96d"/>
+      <stop offset="100%" stop-color="#c18342"/>
+    </linearGradient>
+    <linearGradient id="cardDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b18"/>
+      <stop offset="100%" stop-color="#12100e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="500" rx="16" fill="url(#melBg)" stroke="#2d261f" stroke-width="2"/>
+
+  <!-- Browser Window Chrome -->
+  <rect x="0" y="0" width="800" height="44" fill="#1b1713" rx="16"/>
+  <rect x="0" y="32" width="800" height="12" fill="#1b1713"/>
+  <circle cx="28" cy="22" r="5" fill="#ef4444"/>
+  <circle cx="46" cy="22" r="5" fill="#f59e0b"/>
+  <circle cx="64" cy="22" r="5" fill="#10b981"/>
+  
+  <!-- URL Bar -->
+  <rect x="100" y="10" width="460" height="24" rx="6" fill="#0d0b09" stroke="#332b23"/>
+  <text x="120" y="26" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#a89f91">
+    https://melthemasterbarber.vercel.app
+  </text>
+
+  <!-- Client Header -->
+  <text x="40" y="86" font-family="'Cinzel', Georgia, serif" font-size="18" font-weight="800" letter-spacing="2" fill="#f3efe6">MEL THE MASTER BARBER</text>
+  <rect x="530" y="68" width="90" height="26" rx="4" fill="#26211a"/>
+  <text x="548" y="85" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#d4c9b8">Services</text>
+  <rect x="636" y="68" width="124" height="26" rx="4" fill="url(#goldGrad)"/>
+  <text x="652" y="85" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#090807">Book Appointment</text>
+
+  <!-- Hero Content in Mockup -->
+  <text x="40" y="145" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#ffffff">
+    Precision Grooming &amp; Luxury Cuts
+  </text>
+  <text x="40" y="180" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#d5c8b5">
+    Craftsmanship, razor-sharp styling, and bespoke barbering experience for gentlemen.
+  </text>
+
+  <!-- Services Grid -->
+  <g transform="translate(40, 215)">
+    <!-- Service 1 -->
+    <rect width="220" height="130" rx="10" fill="url(#cardDark)" stroke="#383026"/>
+    <circle cx="34" cy="34" r="16" fill="#2d261e"/>
+    <!-- Razor icon -->
+    <path d="M26 34 L42 34 M34 26 L34 42" stroke="#e0a96d" stroke-width="2"/>
+    <text x="20" y="78" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Signature Haircut</text>
+    <text x="20" y="98" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#998e7f">Consultation, wash &amp; razor finish</text>
+    <text x="20" y="120" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#e0a96d">45 Mins · $45</text>
+
+    <!-- Service 2 -->
+    <rect x="250" width="220" height="130" rx="10" fill="url(#cardDark)" stroke="#383026"/>
+    <circle cx="284" cy="34" r="16" fill="#2d261e"/>
+    <path d="M276 34 L292 34" stroke="#e0a96d" stroke-width="2"/>
+    <text x="270" y="78" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Hot Towel Shave</text>
+    <text x="270" y="98" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#998e7f">Essential oils &amp; straight blade</text>
+    <text x="270" y="120" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#e0a96d">35 Mins · $35</text>
+
+    <!-- Service 3 -->
+    <rect x="500" width="220" height="130" rx="10" fill="url(#cardDark)" stroke="#383026"/>
+    <circle cx="534" cy="34" r="16" fill="#2d261e"/>
+    <polygon points="534,26 542,40 526,40" fill="#e0a96d"/>
+    <text x="520" y="78" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="700" fill="#ffffff">The Full Executive</text>
+    <text x="520" y="98" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#998e7f">Haircut, beard sculpt &amp; facial</text>
+    <text x="520" y="120" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#e0a96d">75 Mins · $70</text>
+  </g>
+
+  <!-- Booking Bar -->
+  <g transform="translate(40, 375)">
+    <rect width="720" height="85" rx="10" fill="#181512" stroke="#2d251d"/>
+    <text x="24" y="32" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Select Date &amp; Reserve Online</text>
+    <rect x="24" y="44" width="130" height="26" rx="4" fill="#26211a" stroke="#3d3328"/>
+    <text x="36" y="61" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#d4c9b8">Today, 4:00 PM</text>
+    
+    <rect x="170" y="44" width="160" height="26" rx="4" fill="#26211a" stroke="#3d3328"/>
+    <text x="182" y="61" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#d4c9b8">Mel (Master Barber)</text>
+
+    <rect x="540" y="40" width="156" height="34" rx="6" fill="url(#goldGrad)"/>
+    <text x="572" y="62" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#090807">Confirm Slot</text>
+  </g>
+</svg>
