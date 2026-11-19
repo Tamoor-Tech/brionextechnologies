@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initYearAutoUpdate();
   initSocialLinks();
+  initCounterAnimation();
 });
 
 /**
@@ -247,4 +248,45 @@ function initSocialLinks() {
   ttLinks.forEach(el => el.setAttribute('href', BRIONEX_SOCIAL_CONFIG.tiktok));
   xLinks.forEach(el => el.setAttribute('href', BRIONEX_SOCIAL_CONFIG.twitter));
   inLinks.forEach(el => el.setAttribute('href', BRIONEX_SOCIAL_CONFIG.linkedin));
+}
+
+
+/**
+ * 7. Animated Counter — Hero Stats & Stat Numbers
+ * Counts from 0 to target value when element enters viewport.
+ */
+function initCounterAnimation() {
+  const counters = document.querySelectorAll('.hero-stat-number, .stat-number');
+  if (!counters.length) return;
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      obs.unobserve(el);
+
+      const raw = el.textContent.trim();
+      // Extract suffix (everything that isn't a digit or decimal point)
+      const suffix = raw.replace(/[\d.]/g, '');
+      const target = parseFloat(raw);
+      if (isNaN(target)) return;
+
+      let start = null;
+      const duration = 1800;
+
+      const step = (timestamp) => {
+        if (!start) start = timestamp;
+        const elapsed = timestamp - start;
+        const progress = Math.min(elapsed / duration, 1);
+        // Cubic ease-out
+        const ease = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(ease * target) + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      };
+
+      requestAnimationFrame(step);
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(el => observer.observe(el));
 }
