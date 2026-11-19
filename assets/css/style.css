@@ -1168,3 +1168,725 @@ a:hover {
     transform: none !important;
   }
 }
+
+/* ==========================================================================
+   PREMIUM HOMEPAGE & CONTACT UPGRADE — Extended Components
+   ========================================================================== */
+
+/* --- Hero Stats Row --- */
+.hero-stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.hero-stat-number {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-white);
+  line-height: 1;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-stat-label {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* --- Glowing Hero Orbs (decorative) --- */
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(80px);
+  opacity: 0.55;
+}
+
+.hero-orb-1 {
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(102, 57, 216, 0.5) 0%, transparent 70%);
+  top: -120px;
+  right: -80px;
+}
+
+.hero-orb-2 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(72, 35, 168, 0.4) 0%, transparent 70%);
+  bottom: 0;
+  left: -60px;
+}
+
+/* --- Trusted Clients / Partners Bar --- */
+.trusted-bar {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 1.5rem 0;
+}
+
+.trusted-bar-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.trusted-bar-divider {
+  width: 1px;
+  height: 28px;
+  background: var(--border-subtle);
+  flex-shrink: 0;
+}
+
+/* --- Why Choose Us — 2-column Split --- */
+.why-choose-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 991.98px) {
+  .why-choose-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.differentiator-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.differentiator-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.1rem 1.35rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-md);
+  transition: all var(--transition-normal);
+}
+
+.differentiator-item:hover {
+  border-color: rgba(102, 57, 216, 0.5);
+  transform: translateX(5px);
+  background: var(--bg-surface-elevated);
+}
+
+.differentiator-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--border-radius-sm);
+  background: var(--violet-dim);
+  border: 1px solid rgba(102, 57, 216, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-accent-violet);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.differentiator-item:hover .differentiator-icon {
+  background: var(--primary-violet);
+  color: #FFFFFF;
+}
+
+.differentiator-title {
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 0.2rem;
+}
+
+.differentiator-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* --- Stats Display Box --- */
+.stats-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-lg);
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-primary);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1.25rem;
+  border-radius: var(--border-radius-md);
+  background: rgba(102, 57, 216, 0.06);
+  border: 1px solid rgba(102, 57, 216, 0.15);
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* --- Process Steps — Enhanced Connector --- */
+.process-step-card {
+  position: relative;
+}
+
+.process-step-card::after {
+  content: '';
+  position: absolute;
+  top: 2.75rem;
+  right: -1.25rem;
+  width: 2.5rem;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-violet), transparent);
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .process-connector .process-step-card:not(:last-child)::after {
+    display: block;
+  }
+}
+
+/* --- Testimonials Section --- */
+.testimonial-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem 2.25rem;
+  height: 100%;
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '\201C';
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 5rem;
+  line-height: 1;
+  color: rgba(102, 57, 216, 0.15);
+  font-family: Georgia, serif;
+  pointer-events: none;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(102, 57, 216, 0.4);
+  box-shadow: var(--shadow-lg), 0 0 24px rgba(102, 57, 216, 0.14);
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 0.25rem;
+  color: #FFB800;
+  font-size: 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.testimonial-text {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #DCDCE9;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.testimonial-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1rem;
+  color: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.testimonial-name {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 0.1rem;
+}
+
+.testimonial-role {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* --- Market / Country Badges --- */
+.market-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--border-radius-pill);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
+  font-size: 0.84rem;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.market-badge:hover {
+  border-color: var(--primary-violet);
+  color: var(--text-accent-violet);
+  background: var(--violet-dim);
+}
+
+/* --- Contact Page Premium Enhancements --- */
+.contact-hero-slim {
+  padding-top: calc(var(--navbar-height) + 2.5rem);
+  padding-bottom: 3.5rem;
+  background: radial-gradient(circle at 20% 50%, rgba(102, 57, 216, 0.14) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(72, 35, 168, 0.1) 0%, transparent 50%),
+              var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.contact-info-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  transition: all var(--transition-normal);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info-card:hover {
+  border-color: rgba(102, 57, 216, 0.5);
+  background: var(--bg-surface-elevated);
+  transform: translateX(4px);
+}
+
+.contact-info-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--border-radius-sm);
+  background: var(--violet-dim);
+  border: 1px solid rgba(102, 57, 216, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-accent-violet);
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.contact-info-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.contact-info-value {
+  font-family: var(--font-heading);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--text-white);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.contact-info-value:hover {
+  color: var(--text-accent-violet);
+}
+
+.contact-info-sub {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-top: 0.2rem;
+}
+
+/* Contact form card premium */
+.contact-form-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-lg);
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-form-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-primary);
+}
+
+@media (max-width: 575.98px) {
+  .contact-form-card {
+    padding: 1.5rem;
+  }
+
+  .hero-stat-number {
+    font-size: 1.6rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.9rem;
+  }
+}
+
+/* WhatsApp quick CTA in contact sidebar */
+.whatsapp-quick-cta {
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.08) 0%, rgba(37, 211, 102, 0.03) 100%);
+  border: 1px solid rgba(37, 211, 102, 0.25);
+  border-radius: var(--border-radius-lg);
+  padding: 1.75rem;
+  margin-top: 1.25rem;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.6rem;
+  font-family: var(--font-heading);
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: #FFFFFF !important;
+  background: var(--whatsapp-green);
+  border: none;
+  border-radius: var(--border-radius-pill);
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-whatsapp:hover {
+  background: var(--whatsapp-green-hover);
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
+}
+
+/* ==========================================================================
+   VIP PROCESS SECTION — Premium Timeline Design
+   ========================================================================== */
+
+/* Process Section Wrapper */
+.process-vip-section {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+/* Background decorative radial glows */
+.process-vip-section::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 500px;
+  background: radial-gradient(ellipse at center, rgba(102, 57, 216, 0.1) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+/* Horizontal connector line across all 4 steps (desktop only) */
+.process-vip-row {
+  position: relative;
+}
+
+.process-vip-row::before {
+  content: '';
+  position: absolute;
+  top: 52px;                       /* aligns with center of step-bubble */
+  left: calc(8.333% + 60px);       /* col-lg-3 = 25% wide; center of first bubble */
+  right: calc(8.333% + 60px);
+  height: 2px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(102, 57, 216, 0.6) 10%,
+    rgba(102, 57, 216, 0.9) 50%,
+    rgba(102, 57, 216, 0.6) 90%,
+    transparent 100%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 991.98px) {
+  .process-vip-row::before {
+    display: none;
+  }
+}
+
+/* Individual VIP process step card */
+.process-vip-card {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 0.5rem;
+  transition: transform var(--transition-normal);
+}
+
+.process-vip-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Step number bubble */
+.process-vip-bubble {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  border: 2px solid rgba(102, 57, 216, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.75rem;
+  position: relative;
+  transition: all var(--transition-normal);
+  box-shadow: 0 0 0 8px rgba(102, 57, 216, 0.06),
+              0 0 0 16px rgba(102, 57, 216, 0.03);
+}
+
+.process-vip-card:hover .process-vip-bubble {
+  background: var(--gradient-primary);
+  border-color: var(--primary-violet);
+  box-shadow: 0 0 0 8px rgba(102, 57, 216, 0.14),
+              0 0 32px rgba(102, 57, 216, 0.5);
+}
+
+/* Outer ring pulse effect on featured steps */
+.process-vip-bubble.featured {
+  background: var(--gradient-primary);
+  border-color: var(--primary-violet);
+  box-shadow: 0 0 0 8px rgba(102, 57, 216, 0.14),
+              0 0 32px rgba(102, 57, 216, 0.4);
+}
+
+/* Step number inside bubble */
+.process-vip-num {
+  font-family: var(--font-heading);
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: var(--text-accent-violet);
+  line-height: 1;
+  transition: color var(--transition-fast);
+}
+
+.process-vip-card:hover .process-vip-num,
+.process-vip-bubble.featured .process-vip-num {
+  color: #FFFFFF;
+}
+
+/* Phase label above step icon */
+.process-vip-phase {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-accent-violet);
+  background: rgba(102, 57, 216, 0.1);
+  border: 1px solid rgba(102, 57, 216, 0.25);
+  border-radius: var(--border-radius-pill);
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+/* Step title */
+.process-vip-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-white);
+  margin-bottom: 0.65rem;
+  transition: color var(--transition-fast);
+}
+
+.process-vip-card:hover .process-vip-title {
+  color: #E5DCFF;
+}
+
+/* Step description */
+.process-vip-desc {
+  font-size: 0.93rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.1rem;
+}
+
+/* Feature micro-tags below each step */
+.process-vip-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.process-vip-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-pill);
+  padding: 0.22rem 0.65rem;
+  transition: all var(--transition-fast);
+}
+
+.process-vip-tag i {
+  font-size: 0.75rem;
+  color: var(--primary-violet);
+}
+
+.process-vip-card:hover .process-vip-tag {
+  border-color: rgba(102, 57, 216, 0.4);
+  color: var(--text-accent-violet);
+  background: rgba(102, 57, 216, 0.08);
+}
+
+/* Vertical step card (mobile alternative) */
+@media (max-width: 767.98px) {
+  .process-vip-card {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--border-radius-md);
+  }
+
+  .process-vip-bubble {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .process-vip-num {
+    font-size: 1.25rem;
+  }
+
+  .process-vip-tags {
+    justify-content: flex-start;
+  }
+
+  .process-vip-phase {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Bottom CTA strip inside process section */
+.process-cta-strip {
+  margin-top: 4rem;
+  padding: 2rem 2.5rem;
+  background: linear-gradient(135deg, rgba(102, 57, 216, 0.14) 0%, rgba(72, 35, 168, 0.08) 100%);
+  border: 1px solid rgba(102, 57, 216, 0.3);
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .process-cta-strip {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.75rem 1.25rem;
+  }
+}
