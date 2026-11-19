@@ -3,13 +3,24 @@
  * Premium Interactions, Accessible Navigation & Form Validation
  */
 
+// Centralized Social Media Configuration (Editable Placeholders)
+const BRIONEX_SOCIAL_CONFIG = {
+  facebook: 'https://facebook.com/brionextechnologies',
+  instagram: 'https://instagram.com/brionextechnologies',
+  tiktok: 'https://tiktok.com/@brionextechnologies',
+  twitter: 'https://x.com/brionextech',
+  linkedin: 'https://linkedin.com/company/brionextechnologies',
+  whatsapp: 'https://wa.me/923170658553',
+  email: 'brionex.tech@gmail.com'
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   initStickyNavbar();
   initActiveNav();
   initScrollReveal();
-  initBackToTop();
   initContactForm();
   initYearAutoUpdate();
+  initSocialLinks();
 });
 
 /**
@@ -20,7 +31,7 @@ function initStickyNavbar() {
   if (!navbar) return;
 
   const handleScroll = () => {
-    if (window.scrollY > 40) {
+    if (window.scrollY > 30) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
@@ -45,7 +56,6 @@ function initActiveNav() {
     const linkPath = href.split('/').pop();
     if (linkPath === currentPath) {
       link.classList.add('active');
-      // If dropdown item, also highlight parent dropdown toggle
       const parentDropdown = link.closest('.dropdown');
       if (parentDropdown) {
         const toggle = parentDropdown.querySelector('.nav-link-brionex');
@@ -86,42 +96,18 @@ function initScrollReveal() {
       });
     }, {
       root: null,
-      threshold: 0.12,
-      rootMargin: '0px 0px -40px 0px'
+      threshold: 0.1,
+      rootMargin: '0px 0px -30px 0px'
     });
 
     revealElements.forEach(el => observer.observe(el));
   } else {
-    // Fallback for older browsers
     revealElements.forEach(el => el.classList.add('is-visible'));
   }
 }
 
 /**
- * 4. Back To Top Button
- */
-function initBackToTop() {
-  const backToTopBtn = document.getElementById('backToTopBtn');
-  if (!backToTopBtn) return;
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 400) {
-      backToTopBtn.classList.add('show');
-    } else {
-      backToTopBtn.classList.remove('show');
-    }
-  }, { passive: true });
-
-  backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-}
-
-/**
- * 5. Transparent & Robust Contact Form Validation
+ * 4. Transparent & Robust Contact Form Validation
  */
 function initContactForm() {
   const form = document.getElementById('brionexContactForm');
@@ -184,7 +170,7 @@ function initContactForm() {
       return;
     }
 
-    // Disable button & show checking state
+    // Loading state
     const originalText = submitBtn ? submitBtn.innerHTML : 'Submit';
     if (submitBtn) {
       submitBtn.disabled = true;
@@ -204,39 +190,39 @@ function initContactForm() {
       const clientBudget = budgetInput && budgetInput.value.trim() ? encodeURIComponent(budgetInput.value.trim()) : 'Unspecified';
       const clientMessage = encodeURIComponent(detailsInput.value.trim());
 
-      const waText = `*BRIONEX Inquiry*%0A%0A*Name:* ${clientName}%0A*Email:* ${clientEmail}%0A*Company:* ${clientCompany}%0A*Service:* ${clientService}%0A*Budget:* ${clientBudget}%0A*Details:* ${clientMessage}`;
+      const waText = `*Brionex Technologies Inquiry*%0A%0A*Name:* ${clientName}%0A*Email:* ${clientEmail}%0A*Company:* ${clientCompany}%0A*Service:* ${clientService}%0A*Budget:* ${clientBudget}%0A*Details:* ${clientMessage}`;
       const waUrl = `https://wa.me/923170658553?text=${waText}`;
 
-      const mailtoUrl = `mailto:info@brionex.com?subject=Project Inquiry: ${clientService} - ${clientName}&body=Name: ${clientName}%0D%0AEmail: ${clientEmail}%0D%0ACompany: ${clientCompany}%0D%0AService: ${clientService}%0D%0ABudget: ${clientBudget}%0D%0A%0D%0AProject Details:%0D%0A${clientMessage}`;
+      const mailtoUrl = `mailto:brionex.tech@gmail.com?subject=Project Inquiry: ${clientService} - ${clientName}&body=Name: ${clientName}%0D%0AEmail: ${clientEmail}%0D%0ACompany: ${clientCompany}%0D%0AService: ${clientService}%0D%0ABudget: ${clientBudget}%0D%0A%0D%0AProject Details:%0D%0A${clientMessage}`;
 
       if (alertBox) {
         alertBox.innerHTML = `
-          <div class="alert alert-info border-1 text-white p-4" style="background-color: #132238; border-color: #00e599;" role="alert">
+          <div class="alert alert-info border-1 text-white p-4" style="background-color: #1C1D2B; border-color: #6639D8;" role="alert">
             <div class="d-flex align-items-center gap-2 mb-2">
-              <i class="bi bi-info-circle-fill text-accent fs-5"></i>
-              <strong class="fs-6 text-white">Inquiry Verified (Frontend Static Mode)</strong>
+              <i class="bi bi-info-circle-fill fs-5" style="color: #B39DFF;"></i>
+              <strong class="fs-6 text-white">Inquiry Ready to Dispatch (Frontend Static Mode)</strong>
             </div>
             <p class="small text-secondary mb-3">
-              This static website requires connection to a live form endpoint (such as Formspree, Web3Forms, or your server API as documented in <code>README.md</code>). You can transmit this inquiry directly to our engineering team right now:
+              This static website requires connection to a live form service (such as Web3Forms or Formspree as documented in <code>README.md</code>). You can transmit this inquiry directly to our engineering team right now:
             </p>
             <div class="d-flex flex-wrap gap-2">
-              <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-brionex-primary">
+              <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-sm" style="background: #25D366; color: #fff; font-weight: 600; border-radius: 9999px; padding: 0.5rem 1.2rem;">
                 <i class="bi bi-whatsapp"></i> Send via WhatsApp (+92 317 0658553)
               </a>
-              <a href="${mailtoUrl}" class="btn btn-sm btn-brionex-secondary">
-                <i class="bi bi-envelope"></i> Open in Email Client
+              <a href="${mailtoUrl}" class="btn btn-sm btn-brionex-primary">
+                <i class="bi bi-envelope"></i> Send via Email (brionex.tech@gmail.com)
               </a>
             </div>
           </div>
         `;
         alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
-    }, 700);
+    }, 600);
   });
 }
 
 /**
- * 6. Auto-update Current Year in Footer
+ * 5. Auto-update Current Year in Footer
  */
 function initYearAutoUpdate() {
   const yearSpans = document.querySelectorAll('.current-year');
@@ -244,4 +230,21 @@ function initYearAutoUpdate() {
   yearSpans.forEach(el => {
     el.textContent = currentYear;
   });
+}
+
+/**
+ * 6. Populate Social Links
+ */
+function initSocialLinks() {
+  const fbLinks = document.querySelectorAll('a.social-fb');
+  const igLinks = document.querySelectorAll('a.social-ig');
+  const ttLinks = document.querySelectorAll('a.social-tt');
+  const xLinks = document.querySelectorAll('a.social-x');
+  const inLinks = document.querySelectorAll('a.social-in');
+
+  fbLinks.forEach(el => el.setAttribute('href', BRIONEX_SOCIAL_CONFIG.facebook));
+  igLinks.forEach(el => el.setAttribute('href', BRIONEX_SOCIAL_CONFIG.instagram));
+  ttLinks.forEach(el => el.setAttribute('href', BRIONEX_SOCIAL_CONFIG.tiktok));
+  xLinks.forEach(el => el.setAttribute('href', BRIONEX_SOCIAL_CONFIG.twitter));
+  inLinks.forEach(el => el.setAttribute('href', BRIONEX_SOCIAL_CONFIG.linkedin));
 }

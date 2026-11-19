@@ -1,24 +1,24 @@
-# BRIONEX Technologies — Official Website
+# Brionex Technologies — Official Website
 
-> Premium, international-standard digital solutions & technology agency website engineered from zero. Built with semantic HTML5, CSS3, Bootstrap 5, and vanilla JavaScript.
+> Premium, international-standard digital solutions & technology agency website. Built with semantic HTML5, modern CSS3, Bootstrap 5, and vanilla JavaScript.
 
 ---
 
 ## 1. Brand Identity & Positioning
 
-**Company Name:** BRIONEX Technologies  
+**Company Name:** Brionex Technologies  
 **Positioning:** An international digital solutions and technology agency helping businesses build modern digital experiences and grow through technology.  
 **Official WhatsApp / Phone:** `+92 317 0658553`  
-**Official Email:** `info@brionex.com`  
+**Official Email:** `brionex.tech@gmail.com`  
 **Verified Markets Served:** United States, United Kingdom, United Arab Emirates, Canada, Australia, Pakistan  
 
-### Signature Color System (CSS Variables)
-- **Deep Midnight Canvas:** `#0b0f19` (`--bg-primary`)
-- **Secondary Slate Base:** `#0f172a` (`--bg-secondary`)
-- **Card Surfaces:** `#131c31` (`--bg-surface`)
-- **Signature Green Accent:** `#00e599` (`--accent-green` / used on the distinctive **X** in BRIONEX and high-priority UI highlights)
-- **Secondary Cyan Accent:** `#00b4d8` (`--accent-cyan`)
-- **Accent Gradient:** `linear-gradient(135deg, #00e599 0%, #00b4d8 100%)`
+### Brand Color System (Yango-Inspired Violet Identity)
+- **Primary Violet:** `#6639D8` (`--primary-violet` / used as the core UI accent, primary buttons, highlights, active states)
+- **Deep Violet:** `#4823A8` (`--deep-violet`)
+- **Light Violet & Soft Lavender:** `#F1ECFF` & `#E5DCFF`
+- **Dark Background Canvas:** `#11121A` (`--bg-primary`)
+- **Dark Surface Base:** `#171824` & `#1C1D2B` (`--bg-surface`)
+- **Signature Green Identity Accent:** `#00e599` (preserved strictly for the **x** in Brione**x** and the floating WhatsApp action button `#25D366`)
 - **Typography:** Headings in **Plus Jakarta Sans**, body copy in **Inter**
 
 ---
@@ -52,9 +52,9 @@ brionextechnologies/
 │   ├── css/
 │   │   └── style.css               # Global Design System, Responsive Breakpoints
 │   ├── js/
-│   │   └── main.js                 # Sticky Nav, Scroll Reveal, Active Link, Form Logic
+│   │   └── main.js                 # Sticky Nav, Scroll Reveal, Active Link, Form Logic, Social Config
 │   └── images/
-│       ├── logo.svg                # Master Vector Logo with Neon 'X'
+│       ├── logo.svg                # Master Vector Logo with Signature Green 'x'
 │       ├── favicon.svg             # Hexagonal App Favicon
 │       ├── hero-mockup.svg         # Platform Visual Composition
 │       ├── project-mjd.svg         # MJD Funding UI Interface Mockup
@@ -113,9 +113,9 @@ The contact form on `contact.html` features comprehensive client-side validation
 - Validates Project Details (minimum 10 characters).
 - Displays validation errors per input.
 - Toggles a button loading state while verifying data.
-- **Zero Deception:** It clearly notifies the user that the site is running in static frontend mode and provides one-click instant transmission options:
+- **Direct Multi-Channel Options:** It clearly notifies the user that the site is running in static frontend mode and provides one-click instant transmission options:
   1. **Send via WhatsApp (+92 317 0658553)** prefilled with their exact form inputs.
-  2. **Open in Email Client** preformatted with their project brief.
+  2. **Send via Email (`brionex.tech@gmail.com`)** preformatted with their project brief.
 
 ### Connecting to a Production Email Dispatch Service
 To enable direct email inbox delivery from the form without writing backend code, choose one of these standard integrations:
@@ -126,7 +126,7 @@ To enable direct email inbox delivery from the form without writing backend code
    ```html
    <form id="brionexContactForm" action="https://api.web3forms.com/submit" method="POST">
      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-     <input type="hidden" name="subject" value="New BRIONEX Project Inquiry">
+     <input type="hidden" name="subject" value="New Brionex Project Inquiry">
      ...
    ```
 
@@ -137,50 +137,18 @@ To enable direct email inbox delivery from the form without writing backend code
    <form id="brionexContactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
    ```
 
-#### Option 3: Custom Node.js / Express Backend
-If connecting to your custom API, update `assets/js/main.js`:
+---
+
+## 6. Social Media Accounts Configuration
+
+Social media accounts are configured centrally in `assets/js/main.js`:
 ```javascript
-fetch('/api/contact', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ name, email, company, service, budget, details })
-})
-.then(res => res.json())
-.then(data => /* Display success alert */)
-.catch(err => /* Handle error */);
+const BRIONEX_SOCIAL_CONFIG = {
+  facebook: 'https://facebook.com/brionextechnologies',
+  instagram: 'https://instagram.com/brionextechnologies',
+  tiktok: 'https://tiktok.com/@brionextechnologies',
+  twitter: 'https://x.com/brionextech',
+  linkedin: 'https://linkedin.com/company/brionextechnologies'
+};
 ```
-
----
-
-## 6. Deployment Guide
-
-### A. Deploy to Vercel (Instant Zero-Config)
-1. Push this folder to a GitHub, GitLab, or Bitbucket repository.
-2. Log in to [vercel.com](https://vercel.com) and click **"Add New Project"**.
-3. Import your repository.
-4. Leave all build settings at default (Vercel automatically detects static HTML).
-5. Click **Deploy**. Your site will be live on a fast global edge network in seconds.
-
-### B. Deploy to Netlify
-1. Drag and drop the `brionextechnologies` folder directly onto the [Netlify Drop](https://app.netlify.com/drop) dashboard, or connect via Git.
-2. Publish directory: `.` (root).
-
-### C. Deploy to Apache / Nginx / Traditional cPanel
-Upload the contents of this folder directly to your web server's `public_html` directory via SFTP or cPanel File Manager.
-
----
-
-## 7. Quality & SEO Audit Checklist
-
-- [x] **Semantic HTML:** All pages include `<header>`, `<main>`, `<section>`, `<article>`, `<nav>`, `<footer>`.
-- [x] **Headings Hierarchy:** Single `<h1>` per page with strictly ordered `<h2>`, `<h3>`, `<h4>` subheadings.
-- [x] **Unique Meta Tags:** Unique `<title>`, `<meta name="description">`, and canonical URLs on all 19 HTML files.
-- [x] **Social OpenGraph:** Verified `og:title`, `og:description`, `og:image`, and `og:url` on all pages.
-- [x] **Schema.org Structured Data:** Valid JSON-LD schemas for `Organization`, `WebSite`, `Service`, `Article`, and `FAQPage`.
-- [x] **Real Client Work:** Featured case studies for verified live projects:
-  - MJD Funding (`https://mjdfunding.vercel.app`)
-  - Mel The Master Barber (`https://melthemasterbarber.vercel.app`)
-  - Sitara Event Complex (`https://sitaraevenetcomplex01.vercel.app`)
-- [x] **Accessibility:** Keyboard tab indexes, visible focus outlines, high-contrast text, `aria-label` tags, and `prefers-reduced-motion` media queries.
-- [x] **Responsive Testing:** Fully responsive from 360px up to 4K displays with zero horizontal overflow.
-- [x] **Sitemap & Robots:** Valid `sitemap.xml` and `robots.txt` indexing all production pages.
+To update the accounts, simply update these values or the respective `href` links in the footer of the HTML files.

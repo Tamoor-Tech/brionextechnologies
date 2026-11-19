@@ -1,20 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" width="900" height="650" fill="none">
   <defs>
     <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00e599" stop-opacity="0.15"/>
-      <stop offset="50%" stop-color="#00b4d8" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#0b0f19" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#6639D8" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#4823A8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#11121A" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="windowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#141f36"/>
-      <stop offset="100%" stop-color="#0d1424"/>
+      <stop offset="0%" stop-color="#1E1F30"/>
+      <stop offset="100%" stop-color="#13141F"/>
     </linearGradient>
-    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00e599"/>
-      <stop offset="100%" stop-color="#00b4d8"/>
+    <linearGradient id="violetNeonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B39DFF"/>
+      <stop offset="50%" stop-color="#6639D8"/>
+      <stop offset="100%" stop-color="#00e599"/>
     </linearGradient>
     <filter id="shadowBox" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#000000" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#000000" flood-opacity="0.65"/>
     </filter>
   </defs>
 
@@ -23,83 +24,83 @@
 
   <!-- Back Layer: Code & Architecture Terminal -->
   <g transform="translate(40, 40)" filter="url(#shadowBox)" opacity="0.95">
-    <rect width="520" height="340" rx="14" fill="#0c121e" stroke="#1e2c47" stroke-width="1.5"/>
+    <rect width="520" height="340" rx="14" fill="#141521" stroke="#2A2C40" stroke-width="1.5"/>
     <!-- Terminal Header -->
-    <rect width="520" height="36" rx="14" fill="#131b2c"/>
-    <rect y="26" width="520" height="10" fill="#131b2c"/>
+    <rect width="520" height="36" rx="14" fill="#1B1C2B"/>
+    <rect y="26" width="520" height="10" fill="#1B1C2B"/>
     <circle cx="20" cy="18" r="4.5" fill="#ef4444"/>
     <circle cx="36" cy="18" r="4.5" fill="#f59e0b"/>
     <circle cx="52" cy="18" r="4.5" fill="#10b981"/>
-    <text x="75" y="22" font-family="'Courier New', monospace" font-size="11" fill="#64748b">core-system.ts — BRIONEX Engine</text>
+    <text x="75" y="22" font-family="'Courier New', monospace" font-size="11" fill="#7E7E94">core-system.ts — Brionex Engine</text>
 
     <!-- Code Lines -->
     <g transform="translate(24, 60)" font-family="'Fira Code', 'Courier New', monospace" font-size="11.5">
-      <text y="0" fill="#64748b">1  <tspan fill="#00b4d8">import</tspan> { Engine, CloudArch } <tspan fill="#00b4d8">from</tspan> <tspan fill="#00e599">'@brionex/core'</tspan>;</text>
-      <text y="22" fill="#64748b">2</text>
-      <text y="44" fill="#64748b">3  <tspan fill="#00b4d8">export async function</tspan> <tspan fill="#f8fafc">deployProductionExperience</tspan>(<tspan fill="#94a3b8">spec</tspan>) {</text>
-      <text y="66" fill="#64748b">4    <tspan fill="#64748b">// Optimize rendering, security &amp; database pipelines</tspan></text>
-      <text y="88" fill="#64748b">5    <tspan fill="#00b4d8">const</tspan> platform = <tspan fill="#00b4d8">await</tspan> Engine.initialize({</text>
-      <text y="110" fill="#64748b">6      environment: <tspan fill="#00e599">'high-availability'</tspan>,</text>
-      <text y="132" fill="#64748b">7      latencyTarget: <tspan fill="#00e599">'&lt; 50ms'</tspan>,</text>
-      <text y="154" fill="#64748b">8      lighthouseTarget: <tspan fill="#00e599">100</tspan></text>
-      <text y="176" fill="#64748b">9    });</text>
-      <text y="198" fill="#64748b">10   <tspan fill="#00b4d8">return</tspan> platform.activateLivePipeline();</text>
-      <text y="220" fill="#64748b">11 }</text>
+      <text y="0" fill="#7E7E94">1  <tspan fill="#B39DFF">import</tspan> { Engine, CloudArch } <tspan fill="#B39DFF">from</tspan> <tspan fill="#00e599">'@brionex/core'</tspan>;</text>
+      <text y="22" fill="#7E7E94">2</text>
+      <text y="44" fill="#7E7E94">3  <tspan fill="#B39DFF">export async function</tspan> <tspan fill="#f8fafc">deployProductionExperience</tspan>(<tspan fill="#A1A1B5">spec</tspan>) {</text>
+      <text y="66" fill="#7E7E94">4    <tspan fill="#7E7E94">// High performance, security &amp; database pipelines</tspan></text>
+      <text y="88" fill="#7E7E94">5    <tspan fill="#B39DFF">const</tspan> platform = <tspan fill="#B39DFF">await</tspan> Engine.initialize({</text>
+      <text y="110" fill="#7E7E94">6      environment: <tspan fill="#00e599">'high-availability'</tspan>,</text>
+      <text y="132" fill="#7E7E94">7      primaryAccent: <tspan fill="#B39DFF">'#6639D8'</tspan>,</text>
+      <text y="154" fill="#7E7E94">8      lighthouseTarget: <tspan fill="#00e599">100</tspan></text>
+      <text y="176" fill="#7E7E94">9    });</text>
+      <text y="198" fill="#7E7E94">10   <tspan fill="#B39DFF">return</tspan> platform.activateLivePipeline();</text>
+      <text y="220" fill="#7E7E94">11 }</text>
       <text y="246" fill="#00e599">✔ SYSTEM STATUS: ONLINE | 100% HEALTH</text>
     </g>
   </g>
 
   <!-- Main Layer: Agency Digital Platform Dashboard -->
   <g transform="translate(180, 160)" filter="url(#shadowBox)">
-    <rect width="680" height="440" rx="16" fill="url(#windowGrad)" stroke="#22385e" stroke-width="1.8"/>
+    <rect width="680" height="440" rx="16" fill="url(#windowGrad)" stroke="#32344D" stroke-width="1.8"/>
     
     <!-- Window Header -->
-    <rect width="680" height="46" rx="16" fill="#162238"/>
-    <rect y="36" width="680" height="10" fill="#162238"/>
+    <rect width="680" height="46" rx="16" fill="#1C1D2C"/>
+    <rect y="36" width="680" height="10" fill="#1C1D2C"/>
     <circle cx="24" cy="23" r="5" fill="#ef4444"/>
     <circle cx="42" cy="23" r="5" fill="#f59e0b"/>
     <circle cx="60" cy="23" r="5" fill="#10b981"/>
-    <rect x="90" y="11" width="320" height="24" rx="6" fill="#0e1726" stroke="#223554"/>
-    <text x="110" y="27" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">
-      https://analytics.brionex.com/client-hub
+    <rect x="90" y="11" width="320" height="24" rx="6" fill="#11121B" stroke="#2E3047"/>
+    <text x="110" y="27" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#A1A1B5">
+      https://analytics.brionex.com/hub
     </text>
 
     <!-- Top Stats Row -->
     <g transform="translate(32, 68)">
       <!-- Stat 1 -->
-      <rect width="186" height="84" rx="10" fill="#0d1627" stroke="#1d3052"/>
-      <text x="16" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" fill="#94a3b8">TOTAL USER ENGAGEMENT</text>
+      <rect width="186" height="84" rx="10" fill="#151623" stroke="#2B2D44"/>
+      <text x="16" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" fill="#A1A1B5">TOTAL ENGAGEMENT</text>
       <text x="16" y="58" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="800" fill="#ffffff">99.8%</text>
       <text x="16" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" fill="#00e599">▲ +34.2% optimized</text>
 
       <!-- Stat 2 -->
-      <rect x="206" width="186" height="84" rx="10" fill="#0d1627" stroke="#1d3052"/>
-      <text x="222" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" fill="#94a3b8">CONVERSION RATE</text>
+      <rect x="206" width="186" height="84" rx="10" fill="#151623" stroke="#2B2D44"/>
+      <text x="222" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" fill="#A1A1B5">CONVERSION RATE</text>
       <text x="222" y="58" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="800" fill="#ffffff">4.82%</text>
-      <text x="222" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" fill="#00b4d8">▲ High intent funnel</text>
+      <text x="222" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" fill="#B39DFF">▲ High intent funnel</text>
 
       <!-- Stat 3 -->
-      <rect x="412" width="204" height="84" rx="10" fill="#0d1627" stroke="#1d3052"/>
-      <text x="428" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" fill="#94a3b8">CORE WEB VITALS</text>
+      <rect x="412" width="204" height="84" rx="10" fill="#151623" stroke="#2B2D44"/>
+      <text x="428" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600" fill="#A1A1B5">CORE WEB VITALS</text>
       <text x="428" y="58" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="800" fill="#00e599">GRADE A+</text>
-      <text x="428" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#94a3b8">0.4s First Contentful Paint</text>
+      <text x="428" y="74" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#A1A1B5">0.4s Fast Contentful Paint</text>
     </g>
 
     <!-- Graph Visualization -->
     <g transform="translate(32, 172)">
-      <rect width="616" height="150" rx="10" fill="#0a1220" stroke="#1a2b47"/>
+      <rect width="616" height="150" rx="10" fill="#12131F" stroke="#25273C"/>
       <!-- Grid lines -->
-      <line x1="20" y1="35" x2="596" y2="35" stroke="#17243c" stroke-dasharray="4 4"/>
-      <line x1="20" y1="75" x2="596" y2="75" stroke="#17243c" stroke-dasharray="4 4"/>
-      <line x1="20" y1="115" x2="596" y2="115" stroke="#17243c" stroke-dasharray="4 4"/>
+      <line x1="20" y1="35" x2="596" y2="35" stroke="#222438" stroke-dasharray="4 4"/>
+      <line x1="20" y1="75" x2="596" y2="75" stroke="#222438" stroke-dasharray="4 4"/>
+      <line x1="20" y1="115" x2="596" y2="115" stroke="#222438" stroke-dasharray="4 4"/>
 
       <!-- Smooth Area Gradient Chart -->
       <path d="M 30 120 Q 120 90, 200 100 T 360 55 T 480 35 T 590 20 L 590 135 L 30 135 Z" fill="url(#bgGlow)"/>
-      <path d="M 30 120 Q 120 90, 200 100 T 360 55 T 480 35 T 590 20" stroke="url(#neonGrad)" stroke-width="3" fill="none"/>
+      <path d="M 30 120 Q 120 90, 200 100 T 360 55 T 480 35 T 590 20" stroke="url(#violetNeonGrad)" stroke-width="3.5" fill="none"/>
       
       <!-- Glowing active points -->
-      <circle cx="360" cy="55" r="5" fill="#00e599" stroke="#ffffff" stroke-width="2"/>
-      <circle cx="480" cy="35" r="5" fill="#00e599" stroke="#ffffff" stroke-width="2"/>
+      <circle cx="360" cy="55" r="5" fill="#6639D8" stroke="#ffffff" stroke-width="2"/>
+      <circle cx="480" cy="35" r="5" fill="#6639D8" stroke="#ffffff" stroke-width="2"/>
       <circle cx="590" cy="20" r="5" fill="#00e599" stroke="#ffffff" stroke-width="2"/>
 
       <text x="24" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#f8fafc">
@@ -109,47 +110,47 @@
 
     <!-- Bottom Feature Tabs / Quick Actions -->
     <g transform="translate(32, 340)">
-      <rect width="190" height="74" rx="8" fill="#111c30" stroke="#1d3052"/>
+      <rect width="190" height="74" rx="8" fill="#171826" stroke="#2B2D44"/>
       <text x="16" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Web Engineering</text>
-      <text x="16" y="48" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#94a3b8">Next-gen clean code</text>
-      <text x="16" y="62" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" fill="#00e599">ACTIVE BUILD</text>
+      <text x="16" y="48" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#A1A1B5">Next-gen clean code</text>
+      <text x="16" y="62" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" fill="#B39DFF">ACTIVE BUILD</text>
 
-      <rect x="206" width="190" height="74" rx="8" fill="#111c30" stroke="#1d3052"/>
+      <rect x="206" width="190" height="74" rx="8" fill="#171826" stroke="#2B2D44"/>
       <text x="222" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Mobile &amp; App UI</text>
-      <text x="222" y="48" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#94a3b8">Intuitive iOS &amp; Android</text>
-      <text x="222" y="62" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" fill="#00b4d8">DEPLOYED</text>
+      <text x="222" y="48" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#A1A1B5">Intuitive iOS &amp; Android</text>
+      <text x="222" y="62" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" fill="#6639D8">DEPLOYED</text>
 
-      <rect x="412" width="204" height="74" rx="8" fill="#111c30" stroke="#1d3052"/>
+      <rect x="412" width="204" height="74" rx="8" fill="#171826" stroke="#2B2D44"/>
       <text x="428" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#ffffff">SEO &amp; Growth</text>
-      <text x="428" y="48" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#94a3b8">Search authority engine</text>
-      <text x="428" y="62" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" fill="#10b981">OPTIMIZED</text>
+      <text x="428" y="48" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#A1A1B5">Search authority engine</text>
+      <text x="428" y="62" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" fill="#00e599">OPTIMIZED</text>
     </g>
   </g>
 
   <!-- Floating Mobile App Screen Overlap -->
   <g transform="translate(680, 90)" filter="url(#shadowBox)">
-    <rect width="180" height="340" rx="26" fill="#090f1a" stroke="#00e599" stroke-width="2"/>
+    <rect width="180" height="340" rx="26" fill="#131420" stroke="#6639D8" stroke-width="2.2"/>
     <!-- Speaker ear notch -->
-    <rect x="65" y="12" width="50" height="4" rx="2" fill="#202e47"/>
+    <rect x="65" y="12" width="50" height="4" rx="2" fill="#2D2F44"/>
     
     <!-- App UI Mock -->
-    <rect x="18" y="34" width="144" height="40" rx="8" fill="#14223b"/>
-    <text x="28" y="52" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" fill="#ffffff">BRIONEX App</text>
-    <text x="28" y="64" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8" fill="#00e599">Realtime Sync</text>
+    <rect x="18" y="34" width="144" height="40" rx="8" fill="#1C1D2D"/>
+    <text x="28" y="52" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" fill="#ffffff">Brionex App</text>
+    <text x="28" y="64" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8" fill="#B39DFF">Realtime Sync</text>
 
     <!-- Mini Cards in Phone -->
-    <rect x="18" y="86" width="144" height="60" rx="8" fill="#101a2e" stroke="#1c2c47"/>
+    <rect x="18" y="86" width="144" height="60" rx="8" fill="#161726" stroke="#282A3E"/>
     <text x="28" y="106" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" fill="#ffffff">Conversion Goal</text>
-    <rect x="28" y="116" width="124" height="6" rx="3" fill="#1a273e"/>
-    <rect x="28" y="116" width="102" height="6" rx="3" fill="url(#neonGrad)"/>
-    <text x="28" y="136" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8" fill="#94a3b8">88% of target met</text>
+    <rect x="28" y="116" width="124" height="6" rx="3" fill="#222436"/>
+    <rect x="28" y="116" width="102" height="6" rx="3" fill="url(#violetNeonGrad)"/>
+    <text x="28" y="136" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8" fill="#A1A1B5">88% of target met</text>
 
-    <rect x="18" y="156" width="144" height="60" rx="8" fill="#101a2e" stroke="#1c2c47"/>
+    <rect x="18" y="156" width="144" height="60" rx="8" fill="#161726" stroke="#282A3E"/>
     <text x="28" y="176" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700" fill="#ffffff">Server Response</text>
     <text x="28" y="200" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="800" fill="#00e599">18 ms</text>
 
     <!-- Mobile CTA -->
-    <rect x="18" y="278" width="144" height="34" rx="10" fill="url(#neonGrad)"/>
-    <text x="50" y="299" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#080e1a">Launch Live</text>
+    <rect x="18" y="278" width="144" height="34" rx="10" fill="url(#violetNeonGrad)"/>
+    <text x="46" y="299" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="800" fill="#ffffff">Launch Live</text>
   </g>
 </svg>
