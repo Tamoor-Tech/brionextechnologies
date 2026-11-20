@@ -679,9 +679,74 @@ body.home .home-project-actions {
   align-items: center;
 }
 
+body.home .home-project-actions .btn-primary,
+body.home .home-project-actions .btn-secondary {
+  height: 46px;
+  min-height: 46px;
+  padding: 0 1.35rem;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  body.home .home-project-actions .btn-primary,
+  body.home .home-project-actions .btn-secondary {
+    min-width: 165px;
+    text-align: center;
+  }
+}
+
 @media (max-width: 767.98px) {
   body.home .home-project-info {
     padding: 1.5rem;
+  }
+
+  /* When two buttons appear in project cards on mobile: 100% equal width stacked */
+  body.home .home-project-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+  }
+
+  body.home .home-project-actions .btn-primary,
+  body.home .home-project-actions .btn-secondary {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  /* When two buttons appear in hero or CTA on mobile: 100% equal width stacked */
+  body.home .home-hero-actions,
+  body.home .home-cta-actions,
+  body.home .d-flex.flex-wrap.gap-3.mb-2,
+  body.home .cta-banner .d-flex.flex-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+  }
+
+  body.home .home-hero-actions .btn-primary,
+  body.home .home-hero-actions .btn-secondary,
+  body.home .home-cta-actions .btn-primary,
+  body.home .home-cta-actions .btn-whatsapp,
+  body.home .d-flex.flex-wrap.gap-3.mb-2 .btn-primary,
+  body.home .d-flex.flex-wrap.gap-3.mb-2 .btn-secondary {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    text-align: center !important;
+    justify-content: center !important;
   }
 }
 
