@@ -1079,6 +1079,58 @@ body.home .reveal-on-scroll.is-visible {
   transform: translateY(0);
 }
 
+/* =========================================
+   NAVBAR & FOOTER LOGO SIZING
+   ========================================= */
+body.home .navbar-brand-logo {
+  display: flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  padding: 0 !important;
+}
+
+body.home .navbar-brand-logo img {
+  height: 58px !important;
+  width: auto !important;
+  max-height: 62px !important;
+  object-fit: contain !important;
+  transition: transform 200ms ease !important;
+}
+
+body.home .navbar-brand-logo:hover img {
+  transform: scale(1.03);
+}
+
+body.home .footer-brand-logo,
+body.home .footer-brionex a img[src*="logo"] {
+  height: 76px !important;
+  width: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+  margin-bottom: 0.75rem !important;
+  display: block !important;
+}
+
+@media (max-width: 767.98px) {
+  body.home .navbar-brand-logo img {
+    height: 50px !important;
+  }
+  body.home .footer-brand-logo,
+  body.home .footer-brionex a img[src*="logo"] {
+    height: 64px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  body.home .navbar-brand-logo img {
+    height: 44px !important;
+  }
+  body.home .footer-brand-logo,
+  body.home .footer-brionex a img[src*="logo"] {
+    height: 56px !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   body.home .reveal-on-scroll {
     opacity: 1 !important;

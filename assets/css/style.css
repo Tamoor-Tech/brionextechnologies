@@ -368,8 +368,28 @@ a:hover { color: var(--primary-hover); }
   border-bottom-color: rgba(163,230,53,.22);
   box-shadow: var(--shadow-md);
 }
-.navbar-brand-logo { display: flex; align-items: center; text-decoration: none; }
-.navbar-brand-logo img { height: 42px; width: auto; }
+.navbar-brand-logo { display: flex; align-items: center; text-decoration: none; padding: 0; }
+.navbar-brand-logo img {
+  height: 58px;
+  width: auto;
+  max-height: 62px;
+  object-fit: contain;
+  transition: transform var(--transition-fast);
+}
+.navbar-brand-logo:hover img {
+  transform: scale(1.03);
+}
+
+/* Footer Brand Logo */
+.footer-brand-logo,
+.footer-brionex a img[src*="logo"] {
+  height: 76px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
+  display: block;
+}
 
 .nav-link-brionex {
   color: #D4D9CF !important;
@@ -1563,9 +1583,23 @@ a:hover { color: var(--primary-hover); }
   }
 }
 
+@media (max-width: 767.98px) {
+  .navbar-brand-logo img {
+    height: 50px !important;
+  }
+  .footer-brand-logo,
+  .footer-brionex a img[src*="logo"] {
+    height: 64px !important;
+  }
+}
+
 @media (max-width: 400px) {
   .navbar-brand-logo img {
-    height: 34px !important;
+    height: 44px !important;
+  }
+  .footer-brand-logo,
+  .footer-brionex a img[src*="logo"] {
+    height: 56px !important;
   }
   .navbar-toggler-brionex {
     padding: 0.3rem 0.55rem !important;
