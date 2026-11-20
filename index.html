@@ -3,28 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brionex Technologies | Digital Solutions & Technology Agency</title>
-  <meta name="description" content="Brionex Technologies is an international digital solutions and technology agency helping businesses build modern digital experiences, mobile applications, custom software, and strategic SEO.">
-  <meta name="keywords" content="Digital Solutions Agency, Web Development Company, Mobile App Development, Custom Software Solutions, SEO Services, Brionex Technologies">
+  <title>Brionex Technologies | Digital Solutions &amp; Technology Agency</title>
+  <meta name="description" content="Brionex Technologies is an international digital solutions agency helping businesses build modern websites, mobile applications, and custom software.">
   <meta name="author" content="Brionex Technologies">
   <link rel="canonical" href="https://brionextechnologies.com/">
 
-  <!-- Open Graph / Social Media -->
+  <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://brionextechnologies.com/">
-  <meta property="og:title" content="Brionex Technologies | Digital Solutions & Technology Agency">
+  <meta property="og:title" content="Brionex Technologies | Digital Solutions &amp; Technology Agency">
   <meta property="og:description" content="Transforming ideas into powerful digital experiences through modern websites, mobile apps, and custom software.">
-  <meta property="og:image" content="assets/images/hero-mockup.svg">
+  <meta property="og:image" content="https://brionextechnologies.com/assets/images/hero-mockup.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://brionextechnologies.com/">
+  <meta name="twitter:title" content="Brionex Technologies | Digital Solutions &amp; Technology Agency">
+  <meta name="twitter:description" content="Transforming ideas into powerful digital experiences through modern websites, mobile apps, and custom software.">
+  <meta name="twitter:image" content="https://brionextechnologies.com/assets/images/hero-mockup.svg">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts Preload & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 
   <!-- Bootstrap 5 CSS & Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
-  <!-- Custom Stylesheet -->
+  <!-- Shared Global Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Homepage Scoped Stylesheet -->
+  <link rel="stylesheet" href="assets/css/home.css">
 
   <!-- JSON-LD Structured Data: Organization & WebSite -->
   <script type="application/ld+json">
@@ -56,12 +69,12 @@
   }
   </script>
 </head>
-<body>
+<body class="home">
 
   <!-- ==================== GLOBAL NAVBAR ==================== -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-brionex fixed-top" aria-label="Main Navigation">
     <div class="container">
-      <a class="navbar-brand navbar-brand-logo" href="index.html">
+      <a class="navbar-brand navbar-brand-logo" href="/" aria-label="Brionex Technologies Home">
         <img src="assets/images/logo.svg" alt="Brionex Technologies Logo" width="180" height="42">
       </a>
       
@@ -72,7 +85,7 @@
       <div class="collapse navbar-collapse" id="navbarBrionexContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item">
-            <a class="nav-link nav-link-brionex active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link nav-link-brionex active" aria-current="page" href="/">Home</a>
           </li>
           
           <li class="nav-item dropdown">
@@ -106,8 +119,8 @@
           </li>
           
           <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-            <a href="contact.html" class="btn-brionex-primary btn-brionex-sm">
-              Start Your Project <i class="bi bi-arrow-right-short fs-5"></i>
+            <a href="contact.html" class="btn-primary" style="height:40px;min-height:40px;padding:0 1.25rem;font-size:0.88rem;">
+              Start Your Project <i class="bi bi-arrow-right"></i>
             </a>
           </li>
         </ul>
@@ -116,802 +129,572 @@
   </nav>
 
   <!-- ==================== MAIN CONTENT ==================== -->
-  <main>
+  <main id="main-content">
 
-    <!-- HERO SECTION -->
-    <section class="hero-wrapper">
-      <div class="hero-mesh-grid"></div>
-      <!-- Decorative Orbs -->
-      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
-      <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+    <!-- 1. HERO SECTION -->
+    <section class="home-hero">
+      <div class="home-hero-grid" aria-hidden="true"></div>
 
       <div class="container position-relative">
         <div class="row align-items-center g-5">
           <div class="col-lg-6 reveal-on-scroll">
-            <span class="badge-tag">
-              <i class="bi bi-lightning-charge-fill"></i> International Digital Agency
+            <span class="home-badge">
+              <i class="bi bi-lightning-charge-fill"></i> Web, Apps &amp; Software Agency
             </span>
-            <h1 class="mb-4">
-              We Build Digital Products That <span class="text-gradient">Drive Real Business Growth.</span>
+            <h1 class="mb-3">
+              Websites That Turn Visitors Into <span class="text-gradient-lime">Customers.</span>
             </h1>
-            <p class="lead mb-4">
-              Brionex Technologies is an international technology agency delivering premium websites, mobile apps, custom software, and strategic digital solutions to ambitious businesses worldwide.
+            <p class="lead mb-4" style="max-width: 540px;">
+              We design and build fast, modern digital experiences that help ambitious businesses attract clients and grow revenue.
             </p>
             <div class="d-flex flex-wrap gap-3 mb-2">
-              <a href="contact.html" class="btn-brionex-primary">
+              <a href="contact.html" class="btn-primary">
                 Start Your Project <i class="bi bi-arrow-right"></i>
               </a>
-              <a href="projects.html" class="btn-brionex-secondary">
+              <a href="projects.html" class="btn-secondary">
                 <i class="bi bi-eye"></i> View Our Work
               </a>
             </div>
           </div>
 
           <div class="col-lg-6 reveal-on-scroll">
-            <div class="hero-visual-frame">
-              <img src="assets/images/hero-mockup.svg" alt="Brionex Engineering Platform Visual" width="900" height="650" class="img-fluid" loading="eager">
-            </div>
-          </div>
-        </div>
-
-        <!-- Hero Stats — Centered -->
-        <div class="hero-stats-row justify-content-center text-center reveal-on-scroll">
-          <div class="hero-stat">
-            <span class="hero-stat-number">10+</span>
-            <span class="hero-stat-label">Projects Delivered</span>
-          </div>
-          <div class="hero-stat-divider d-none d-md-block"></div>
-          <div class="hero-stat">
-            <span class="hero-stat-number">6+</span>
-            <span class="hero-stat-label">Countries Served</span>
-          </div>
-          <div class="hero-stat-divider d-none d-md-block"></div>
-          <div class="hero-stat">
-            <span class="hero-stat-number">100%</span>
-            <span class="hero-stat-label">Client Satisfaction</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TRUSTED MARKETS BAR -->
-    <div class="trusted-bar">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
-          <span class="trusted-bar-label">Serving businesses in:</span>
-          <div class="trusted-bar-divider d-none d-sm-block"></div>
-          <div class="d-flex flex-wrap justify-content-center gap-2">
-            <span class="market-badge"><i class="bi bi-geo-alt-fill" style="color:var(--primary-violet);font-size:0.78rem;"></i> United States</span>
-            <span class="market-badge"><i class="bi bi-geo-alt-fill" style="color:var(--primary-violet);font-size:0.78rem;"></i> United Kingdom</span>
-            <span class="market-badge"><i class="bi bi-geo-alt-fill" style="color:var(--primary-violet);font-size:0.78rem;"></i> UAE</span>
-            <span class="market-badge"><i class="bi bi-geo-alt-fill" style="color:var(--primary-violet);font-size:0.78rem;"></i> Canada</span>
-            <span class="market-badge"><i class="bi bi-geo-alt-fill" style="color:var(--primary-violet);font-size:0.78rem;"></i> Australia</span>
-            <span class="market-badge"><i class="bi bi-geo-alt-fill" style="color:var(--primary-violet);font-size:0.78rem;"></i> Pakistan</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- COMPANY INTRODUCTION -->
-    <section class="section-py" style="background-color: var(--bg-secondary);">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-5 reveal-on-scroll">
-            <span class="badge-tag"><i class="bi bi-shield-check"></i> Enterprise Capability</span>
-            <h2>Technology Built Around <span class="text-accent">Your Business.</span></h2>
-            <p class="text-secondary mt-3 mb-0">
-              We combine technical expertise, creative strategy, and business intelligence to deliver digital products that establish your presence and accelerate growth.
-            </p>
-          </div>
-          <div class="col-lg-7 reveal-on-scroll">
-            <div class="stats-box">
-              <div class="stats-grid">
-                <div class="stat-item">
-                  <div class="stat-number">10+</div>
-                  <div class="stat-label">Projects Delivered</div>
+            <div class="home-mockup-wrapper">
+              <div class="home-mockup-glow" aria-hidden="true"></div>
+              
+              <!-- Laptop Mockup -->
+              <div class="home-laptop-frame">
+                <div class="home-laptop-camera" aria-hidden="true"></div>
+                <div class="home-laptop-screen">
+                  <img src="assets/images/funding-project.png" alt="MJD Funding platform desktop interface built by Brionex Technologies" width="1345" height="626" loading="eager">
                 </div>
-                <div class="stat-item">
-                  <div class="stat-number">6+</div>
-                  <div class="stat-label">Countries Served</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number">7</div>
-                  <div class="stat-label">Core Services</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number">100%</div>
-                  <div class="stat-label">Satisfaction Rate</div>
+                <div class="home-laptop-base" aria-hidden="true"></div>
+              </div>
+
+              <!-- Phone Mockup (Overlapping) -->
+              <div class="home-phone-frame d-none d-sm-block">
+                <div class="home-phone-screen">
+                  <img src="assets/images/melthemasterbarber.png" alt="Mel The Master Barber mobile web application interface" width="1342" height="641" loading="eager">
                 </div>
               </div>
-              <p class="text-secondary small mt-3 mb-0">
-                <i class="bi bi-patch-check text-accent me-1"></i>
-                Bespoke software environments, high-converting web portals, and native-feeling mobile apps — built for stability, security, and measurable results.
-              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- COMPREHENSIVE SERVICES -->
-    <section class="section-py-lg" id="services">
+    <!-- 2. PROOF STRIP (Compact Stats Shown ONCE) -->
+    <section class="home-proof-strip" aria-label="Key Agency Statistics">
       <div class="container">
-        <div class="section-header text-center reveal-on-scroll">
-          <span class="badge-tag"><i class="bi bi-stars"></i> Our Core Capabilities</span>
-          <h2>Specialized Engineering &amp; <span class="text-gradient">Strategic Services</span></h2>
-          <p class="lead text-secondary mt-3">
-            Every digital product we engineer is designed to solve real business bottlenecks and drive sustainable growth.
-          </p>
+        <div class="row g-4 align-items-center justify-content-center text-center">
+          <div class="col-4 col-md-3">
+            <div class="home-stat-box">
+              <span class="home-stat-number">50+</span>
+              <span class="home-stat-label">Projects Launched</span>
+            </div>
+          </div>
+          <div class="col-auto d-none d-md-block" aria-hidden="true">
+            <div class="home-stat-divider"></div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="home-stat-box">
+              <span class="home-stat-number">6+</span>
+              <span class="home-stat-label">Countries Served</span>
+            </div>
+          </div>
+          <div class="col-auto d-none d-md-block" aria-hidden="true">
+            <div class="home-stat-divider"></div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="home-stat-box">
+              <span class="home-stat-number">99%</span>
+              <span class="home-stat-label">On-Time Delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SERVICES SECTION (4 Core Services) -->
+    <section class="home-section-py" id="services">
+      <div class="container">
+        <div class="home-section-header text-center reveal-on-scroll">
+          <span class="home-badge"><i class="bi bi-stars"></i> What We Do</span>
+          <h2>Specialized Engineering &amp; <span class="text-gradient-lime">Digital Services</span></h2>
+          <p class="lead mt-3">We engineer reliable digital solutions designed to solve business bottlenecks and accelerate growth.</p>
         </div>
 
         <div class="row g-4">
           <!-- 1. Web Development -->
-          <div class="col-md-6 col-lg-4 reveal-on-scroll">
-            <div class="card-brionex">
-              <div class="card-icon-box">
+          <div class="col-md-6 col-lg-3 reveal-on-scroll">
+            <div class="home-service-card">
+              <div class="home-service-icon" aria-hidden="true">
                 <i class="bi bi-code-slash"></i>
               </div>
-              <h4>Website Design &amp; Development</h4>
-              <p>High-performance, bespoke commercial websites built with clean architecture, fluid responsiveness, and rapid load speeds.</p>
-              <a href="web-development.html" class="fw-semibold text-accent d-inline-flex align-items-center gap-1 mt-auto">
-                Learn More <i class="bi bi-arrow-right small"></i>
+              <h3 class="home-service-title">Website Design &amp; Development</h3>
+              <p class="home-service-desc">High-performance business websites engineered for speed, clean UX, and consistent conversions.</p>
+              <a href="web-development.html" class="home-service-link mt-auto">
+                Learn More <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
 
           <!-- 2. Mobile App Development -->
-          <div class="col-md-6 col-lg-4 reveal-on-scroll">
-            <div class="card-brionex">
-              <div class="card-icon-box">
+          <div class="col-md-6 col-lg-3 reveal-on-scroll">
+            <div class="home-service-card">
+              <div class="home-service-icon" aria-hidden="true">
                 <i class="bi bi-phone"></i>
               </div>
-              <h4>Mobile App Development</h4>
-              <p>Native and hybrid Android and iOS mobile applications engineered with user-centered UX and resilient backend integrations.</p>
-              <a href="app-development.html" class="fw-semibold text-accent d-inline-flex align-items-center gap-1 mt-auto">
-                Learn More <i class="bi bi-arrow-right small"></i>
+              <h3 class="home-service-title">Mobile App Development</h3>
+              <p class="home-service-desc">Native and cross-platform iOS and Android apps with fluid user journeys and reliable backends.</p>
+              <a href="app-development.html" class="home-service-link mt-auto">
+                Learn More <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
 
           <!-- 3. Custom Software -->
-          <div class="col-md-6 col-lg-4 reveal-on-scroll">
-            <div class="card-brionex">
-              <div class="card-icon-box">
+          <div class="col-md-6 col-lg-3 reveal-on-scroll">
+            <div class="home-service-card">
+              <div class="home-service-icon" aria-hidden="true">
                 <i class="bi bi-cpu"></i>
               </div>
-              <h4>Custom Software Development</h4>
-              <p>Tailored web apps, internal dashboards, and automated operational pipelines structured around your specific business logic.</p>
-              <a href="custom-software.html" class="fw-semibold text-accent d-inline-flex align-items-center gap-1 mt-auto">
-                Learn More <i class="bi bi-arrow-right small"></i>
+              <h3 class="home-service-title">Custom Software Development</h3>
+              <p class="home-service-desc">Tailored web platforms, internal dashboards, and automated operational pipelines for your workflow.</p>
+              <a href="custom-software.html" class="home-service-link mt-auto">
+                Learn More <i class="bi bi-arrow-right"></i>
               </a>
             </div>
           </div>
 
           <!-- 4. Website Redesign -->
-          <div class="col-md-6 col-lg-4 reveal-on-scroll">
-            <div class="card-brionex">
-              <div class="card-icon-box">
+          <div class="col-md-6 col-lg-3 reveal-on-scroll">
+            <div class="home-service-card">
+              <div class="home-service-icon" aria-hidden="true">
                 <i class="bi bi-arrow-repeat"></i>
               </div>
-              <h4>Website Redesign &amp; Modernization</h4>
-              <p>Transform legacy websites into cutting-edge, mobile-first digital assets optimized for modern user expectations and conversion.</p>
-              <a href="website-redesign.html" class="fw-semibold text-accent d-inline-flex align-items-center gap-1 mt-auto">
-                Learn More <i class="bi bi-arrow-right small"></i>
+              <h3 class="home-service-title">Website Redesign &amp; Modernization</h3>
+              <p class="home-service-desc">Transform legacy websites into cutting-edge, mobile-first assets that drive real business results.</p>
+              <a href="website-redesign.html" class="home-service-link mt-auto">
+                Learn More <i class="bi bi-arrow-right"></i>
               </a>
-            </div>
-          </div>
-
-          <!-- 5. Search Engine Optimization -->
-          <div class="col-md-6 col-lg-4 reveal-on-scroll">
-            <div class="card-brionex">
-              <div class="card-icon-box">
-                <i class="bi bi-graph-up-arrow"></i>
-              </div>
-              <h4>Search Engine Optimization (SEO)</h4>
-              <p>Technical site audits, structural on-page optimization, and organic visibility strategies designed for durable search discovery.</p>
-              <a href="seo.html" class="fw-semibold text-accent d-inline-flex align-items-center gap-1 mt-auto">
-                Learn More <i class="bi bi-arrow-right small"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 6. Logo Design & Brand Identity -->
-          <div class="col-md-6 col-lg-4 reveal-on-scroll">
-            <div class="card-brionex">
-              <div class="card-icon-box">
-                <i class="bi bi-palette"></i>
-              </div>
-              <h4>Logo Design &amp; Brand Identity</h4>
-              <p>Distinctive visual identities, cohesive typography, and corporate design kits that establish credibility and industry presence.</p>
-              <a href="branding.html" class="fw-semibold text-accent d-inline-flex align-items-center gap-1 mt-auto">
-                Learn More <i class="bi bi-arrow-right small"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 7. Social Media Marketing -->
-          <div class="col-md-6 col-lg-4 reveal-on-scroll mx-auto">
-            <div class="card-brionex">
-              <div class="card-icon-box">
-                <i class="bi bi-megaphone"></i>
-              </div>
-              <h4>Social Media Marketing</h4>
-              <p>Targeted audience acquisition, strategic campaign architectures, and high-impact visual content across modern digital channels.</p>
-              <a href="social-media-marketing.html" class="fw-semibold text-accent d-inline-flex align-items-center gap-1 mt-auto">
-                Learn More <i class="bi bi-arrow-right small"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED PROJECTS -->
-    <section class="section-py" style="background-color: var(--bg-secondary);" id="projects">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-end justify-content-between mb-5 reveal-on-scroll">
-          <div>
-            <span class="badge-tag"><i class="bi bi-folder-check"></i> Verified Production Work</span>
-            <h2>Featured Client <span class="text-accent">Projects</span></h2>
-            <p class="text-secondary mb-0">Real websites engineered and launched live for verified business operations.</p>
-          </div>
-          <div class="mt-3 mt-md-0">
-            <a href="projects.html" class="btn-brionex-secondary btn-brionex-sm">
-              View All Projects <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="row g-4">
-          <!-- Project 1: MJD Funding -->
-          <div class="col-lg-4 reveal-on-scroll">
-            <div class="project-card">
-              <div class="project-card-image">
-                <img src="assets/images/project-mjd.svg" alt="MJD Funding Website Interface Screenshot" loading="lazy">
-                <span class="project-badge-pill">Financial Services</span>
-              </div>
-              <div class="project-card-body">
-                <h4>MJD Funding</h4>
-                <p>A professional digital experience for a funding business, designed to present financial services and help visitors explore funding solutions.</p>
-                <div class="project-card-footer">
-                  <a href="mjd-funding.html" class="fw-bold text-accent">
-                    View Case Study <i class="bi bi-arrow-right"></i>
-                  </a>
-                  <a href="https://mjdfunding.vercel.app" target="_blank" rel="noopener noreferrer" class="text-secondary small d-flex align-items-center gap-1" title="Visit Live Site">
-                    Visit Live Site <i class="bi bi-box-arrow-up-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2: Mel The Master Barber -->
-          <div class="col-lg-4 reveal-on-scroll">
-            <div class="project-card">
-              <div class="project-card-image">
-                <img src="assets/images/project-mel.svg" alt="Mel The Master Barber Website Screenshot" loading="lazy">
-                <span class="project-badge-pill">Grooming &amp; Barbershop</span>
-              </div>
-              <div class="project-card-body">
-                <h4>Mel The Master Barber</h4>
-                <p>A modern website for a barber business, featuring service presentation, customer information, and booking-oriented functionality.</p>
-                <div class="project-card-footer">
-                  <a href="mel-the-master-barber.html" class="fw-bold text-accent">
-                    View Case Study <i class="bi bi-arrow-right"></i>
-                  </a>
-                  <a href="https://melthemasterbarber.vercel.app" target="_blank" rel="noopener noreferrer" class="text-secondary small d-flex align-items-center gap-1" title="Visit Live Site">
-                    Visit Live Site <i class="bi bi-box-arrow-up-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3: Sitara Event Complex -->
-          <div class="col-lg-4 reveal-on-scroll">
-            <div class="project-card">
-              <div class="project-card-image">
-                <img src="assets/images/project-sitara.svg" alt="Sitara Event Complex Website Screenshot" loading="lazy">
-                <span class="project-badge-pill">Events &amp; Hospitality</span>
-              </div>
-              <div class="project-card-body">
-                <h4>Sitara Event Complex</h4>
-                <p>A premium online presence for an event venue, designed to showcase its services and provide useful information to potential customers.</p>
-                <div class="project-card-footer">
-                  <a href="sitara-event-complex.html" class="fw-bold text-accent">
-                    View Case Study <i class="bi bi-arrow-right"></i>
-                  </a>
-                  <a href="https://sitaraevenetcomplex01.vercel.app" target="_blank" rel="noopener noreferrer" class="text-secondary small d-flex align-items-center gap-1" title="Visit Live Site">
-                    Visit Live Site <i class="bi bi-box-arrow-up-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY CHOOSE Brionex -->
-    <section class="section-py-lg">
-      <div class="container">
-        <div class="section-header text-center reveal-on-scroll">
-          <span class="badge-tag"><i class="bi bi-check2-circle"></i> Competitive Advantage</span>
-          <h2>Why Choose <span class="text-gradient">Brionex Technologies</span></h2>
-          <p class="lead text-secondary mt-3">
-            We adhere to rigorous technical standards, zero bloat, and complete commercial transparency — delivering software that moves the needle.
-          </p>
-        </div>
-
-        <div class="row g-4 align-items-start">
-          <!-- Left: Differentiator List -->
-          <div class="col-lg-7 reveal-on-scroll">
-            <ul class="differentiator-list">
-              <li class="differentiator-item">
-                <div class="differentiator-icon"><i class="bi bi-briefcase"></i></div>
-                <div>
-                  <div class="differentiator-title">Business-Focused Engineering</div>
-                  <p class="differentiator-desc">Every layout, button, and user flow is calibrated to accomplish measurable business outcomes — not just look good.</p>
-                </div>
-              </li>
-              <li class="differentiator-item">
-                <div class="differentiator-icon"><i class="bi bi-person-heart"></i></div>
-                <div>
-                  <div class="differentiator-title">User-Centered Design</div>
-                  <p class="differentiator-desc">Intuitive interfaces that remove friction, guide visitor attention, and communicate value clearly across all screen sizes.</p>
-                </div>
-              </li>
-              <li class="differentiator-item">
-                <div class="differentiator-icon"><i class="bi bi-patch-check"></i></div>
-                <div>
-                  <div class="differentiator-title">Quality-Driven Development</div>
-                  <p class="differentiator-desc">Thorough testing across browsers, responsive viewports, and Core Web Vitals — delivering reliable, bug-free software.</p>
-                </div>
-              </li>
-              <li class="differentiator-item">
-                <div class="differentiator-icon"><i class="bi bi-chat-dots"></i></div>
-                <div>
-                  <div class="differentiator-title">Transparent Communication</div>
-                  <p class="differentiator-desc">Direct milestone updates, clear timelines, and dedicated developer support — no jargon, no hidden surprises.</p>
-                </div>
-              </li>
-              <li class="differentiator-item">
-                <div class="differentiator-icon"><i class="bi bi-graph-up"></i></div>
-                <div>
-                  <div class="differentiator-title">Growth-Oriented Architecture</div>
-                  <p class="differentiator-desc">Software engineered to scale effortlessly as your traffic, customers, and business operations expand over time.</p>
-                </div>
-              </li>
-              <li class="differentiator-item">
-                <div class="differentiator-icon"><i class="bi bi-layers"></i></div>
-                <div>
-                  <div class="differentiator-title">Modern Technology Stack</div>
-                  <p class="differentiator-desc">Built with clean, standards-compliant code, responsive frameworks, and production-tested backend systems.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Right: Comparison Card -->
-          <div class="col-lg-5 reveal-on-scroll">
-            <div class="stats-box h-100">
-              <div class="mb-4">
-                <span class="badge-tag"><i class="bi bi-x-circle"></i> Others Deliver</span>
-                <ul class="mt-3" style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.6rem;">
-                  <li class="d-flex align-items-center gap-2 text-secondary small"><i class="bi bi-x-circle-fill" style="color:#F87171;font-size:1.05rem;"></i> Generic templates with no customization</li>
-                  <li class="d-flex align-items-center gap-2 text-secondary small"><i class="bi bi-x-circle-fill" style="color:#F87171;font-size:1.05rem;"></i> Slow, bloated websites with poor performance</li>
-                  <li class="d-flex align-items-center gap-2 text-secondary small"><i class="bi bi-x-circle-fill" style="color:#F87171;font-size:1.05rem;"></i> Inconsistent communication and missed deadlines</li>
-                  <li class="d-flex align-items-center gap-2 text-secondary small"><i class="bi bi-x-circle-fill" style="color:#F87171;font-size:1.05rem;"></i> Desktop-only designs that break on mobile</li>
-                  <li class="d-flex align-items-center gap-2 text-secondary small"><i class="bi bi-x-circle-fill" style="color:#F87171;font-size:1.05rem;"></i> Hidden charges and unclear project scope</li>
-                </ul>
-              </div>
-              <div class="border-top border-secondary border-opacity-25 pt-4">
-                <span class="badge-tag"><i class="bi bi-check-circle"></i> Brionex Delivers</span>
-                <ul class="mt-3" style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.6rem;">
-                  <li class="d-flex align-items-center gap-2 small" style="color:#D4D4E8;"><i class="bi bi-check-circle-fill" style="color:#A3E635;font-size:1.05rem;"></i> Fully bespoke, premium UI/UX design</li>
-                  <li class="d-flex align-items-center gap-2 small" style="color:#D4D4E8;"><i class="bi bi-check-circle-fill" style="color:#A3E635;font-size:1.05rem;"></i> Blazing-fast load speeds and Core Web Vitals</li>
-                  <li class="d-flex align-items-center gap-2 small" style="color:#D4D4E8;"><i class="bi bi-check-circle-fill" style="color:#A3E635;font-size:1.05rem;"></i> Proactive milestone reporting every step</li>
-                  <li class="d-flex align-items-center gap-2 small" style="color:#D4D4E8;"><i class="bi bi-check-circle-fill" style="color:#A3E635;font-size:1.05rem;"></i> True mobile-first design across all devices</li>
-                  <li class="d-flex align-items-center gap-2 small" style="color:#D4D4E8;"><i class="bi bi-check-circle-fill" style="color:#A3E635;font-size:1.05rem;"></i> Fixed-price, fully transparent scoping</li>
-                </ul>
-              </div>
-              <div class="mt-4">
-                <a href="contact.html" class="btn-brionex-primary w-100 text-center">Start Your Project <i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- OUR PROVEN PROCESS — VIP -->
-    <section class="process-vip-section section-py">
-      <div class="container">
-        <div class="section-header text-center reveal-on-scroll">
-          <span class="badge-tag"><i class="bi bi-diagram-3"></i> How We Work</span>
-          <h2>Our Proven <span class="text-gradient">Process</span></h2>
-          <p class="lead text-secondary mt-3">From your first message to a live, polished product — structured, transparent, and built for speed.</p>
-        </div>
-        <div class="row g-4 g-lg-0 process-vip-row reveal-on-scroll">
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="process-vip-card">
-              <div class="process-vip-bubble"><span class="process-vip-num">01</span></div>
-              <div class="process-vip-body">
-                <span class="process-vip-phase"><i class="bi bi-search"></i> Phase One</span>
-                <h3 class="process-vip-title">Discovery &amp; Brief</h3>
-                <p class="process-vip-desc">We learn your business, audience, goals, and technical requirements in a focused consultation.</p>
-                <div class="process-vip-tags">
-                  <span class="process-vip-tag"><i class="bi bi-check2"></i> Business Analysis</span>
-                  <span class="process-vip-tag"><i class="bi bi-check2"></i> Scope Definition</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="process-vip-card">
-              <div class="process-vip-bubble featured"><span class="process-vip-num">02</span></div>
-              <div class="process-vip-body">
-                <span class="process-vip-phase"><i class="bi bi-layers"></i> Phase Two</span>
-                <h3 class="process-vip-title">Strategy &amp; Design</h3>
-                <p class="process-vip-desc">Wireframes, architecture, UX flows, and visual direction — all defined before a single line of code.</p>
-                <div class="process-vip-tags">
-                  <span class="process-vip-tag"><i class="bi bi-check2"></i> Wireframing</span>
-                  <span class="process-vip-tag"><i class="bi bi-check2"></i> UX Architecture</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="process-vip-card">
-              <div class="process-vip-bubble"><span class="process-vip-num">03</span></div>
-              <div class="process-vip-body">
-                <span class="process-vip-phase"><i class="bi bi-code-slash"></i> Phase Three</span>
-                <h3 class="process-vip-title">Engineering &amp; Build</h3>
-                <p class="process-vip-desc">Clean, standards-compliant code with iterative QA, API integrations, and performance optimization.</p>
-                <div class="process-vip-tags">
-                  <span class="process-vip-tag"><i class="bi bi-check2"></i> Clean Code</span>
-                  <span class="process-vip-tag"><i class="bi bi-check2"></i> QA &amp; Testing</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="process-vip-card">
-              <div class="process-vip-bubble"><span class="process-vip-num">04</span></div>
-              <div class="process-vip-body">
-                <span class="process-vip-phase"><i class="bi bi-rocket-takeoff"></i> Phase Four</span>
-                <h3 class="process-vip-title">Launch &amp; Support</h3>
-                <p class="process-vip-desc">We deploy to high-performance infrastructure, verify SEO indexing, and provide post-launch guidance.</p>
-                <div class="process-vip-tags">
-                  <span class="process-vip-tag"><i class="bi bi-check2"></i> Live Deployment</span>
-                  <span class="process-vip-tag"><i class="bi bi-check2"></i> SEO Verification</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="process-cta-strip reveal-on-scroll">
-          <div>
-            <div class="text-white fw-bold mb-1" style="font-size:1.1rem;">Ready to start your project?</div>
-            <div class="text-secondary small">Free consultation and clear proposal within 24 hours.</div>
-          </div>
-          <div class="d-flex flex-wrap gap-3">
-            <a href="contact.html" class="btn-brionex-primary">Start Your Project <i class="bi bi-arrow-right"></i></a>
-            <a href="https://wa.me/923170658553" target="_blank" rel="noopener noreferrer" class="btn-whatsapp"><i class="bi bi-whatsapp"></i> Chat on WhatsApp</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TECHNOLOGIES WE USE -->
-    <section class="section-py">
-      <div class="container">
-        <div class="section-header text-center reveal-on-scroll">
-          <span class="badge-tag"><i class="bi bi-code-square"></i> Verified Stack</span>
-          <h2>Modern, Battle-Tested <span class="text-gradient">Technologies</span></h2>
-          <p class="lead text-secondary mt-3">We utilize industry-standard tools known for speed, security, and long-term maintainability.</p>
-        </div>
-
-        <div class="d-flex flex-wrap justify-content-center gap-3 reveal-on-scroll">
-          <div class="tech-pill"><i class="bi bi-filetype-html"></i> HTML5 Semantic</div>
-          <div class="tech-pill"><i class="bi bi-filetype-css"></i> CSS3 &amp; Modern Flex/Grid</div>
-          <div class="tech-pill"><i class="bi bi-bootstrap"></i> Bootstrap 5.3</div>
-          <div class="tech-pill"><i class="bi bi-filetype-js"></i> Vanilla JavaScript (ES6+)</div>
-          <div class="tech-pill"><i class="bi bi-server"></i> Node.js Runtime</div>
-          <div class="tech-pill"><i class="bi bi-diagram-2"></i> Express.js</div>
-          <div class="tech-pill"><i class="bi bi-database"></i> MongoDB</div>
-          <div class="tech-pill"><i class="bi bi-database-fill-gear"></i> MySQL Relational DB</div>
-          <div class="tech-pill"><i class="bi bi-shield-lock"></i> SSL / HTTPS Encryption</div>
-          <div class="tech-pill"><i class="bi bi-speedometer2"></i> Core Web Vitals Optimization</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHAT CLIENTS SAY -->
-    <section class="section-py" style="background-color: var(--bg-secondary);">
-      <div class="container">
-        <div class="section-header text-center reveal-on-scroll">
-          <span class="badge-tag"><i class="bi bi-chat-square-quote"></i> Client Feedback</span>
-          <h2>What Our <span class="text-gradient">Clients Say</span></h2>
-          <p class="lead text-secondary mt-3">Real feedback from real businesses we've worked with across different industries.</p>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4 reveal-on-scroll">
-            <div class="testimonial-card">
-              <div class="testimonial-stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p class="testimonial-text">"Brionex delivered a modern, fast website for MJD Funding that exceeded our expectations. The design is clean, professional, and perfectly reflects our financial services brand."</p>
-              <div class="testimonial-author">
-                <div class="testimonial-avatar">M</div>
-                <div>
-                  <div class="testimonial-name">MJD Funding Team</div>
-                  <div class="testimonial-role">Financial Services — USA</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 reveal-on-scroll">
-            <div class="testimonial-card">
-              <div class="testimonial-stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p class="testimonial-text">"The team at Brionex was professional, communicative, and delivered exactly what we needed. Our barbershop website looks incredible and customers love it."</p>
-              <div class="testimonial-author">
-                <div class="testimonial-avatar">L</div>
-                <div>
-                  <div class="testimonial-name">Mel The Master Barber</div>
-                  <div class="testimonial-role">Grooming & Barbershop — UK</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4 reveal-on-scroll">
-            <div class="testimonial-card">
-              <div class="testimonial-stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p class="testimonial-text">"Sitara Event Complex now has a premium digital presence that attracts real customers. Brionex handled everything from design to launch — truly excellent work."</p>
-              <div class="testimonial-author">
-                <div class="testimonial-avatar">S</div>
-                <div>
-                  <div class="testimonial-name">Sitara Event Complex</div>
-                  <div class="testimonial-role">Events & Hospitality — Pakistan</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRICING PREVIEW -->
-    <section class="section-py section-light" id="pricing">
-      <div class="container">
-        <div class="section-header text-center reveal-on-scroll">
-          <span class="badge-tag"><i class="bi bi-tag-fill"></i> Investment Tiers</span>
-          <h2>Transparent <span class="text-accent">Pricing Solutions</span></h2>
-          <p class="lead text-secondary mt-3">Structured, milestone-based packages designed to meet your current stage of growth. Clear deliverables, zero surprise costs.</p>
-        </div>
-
-        <div class="row g-4 align-items-stretch justify-content-center">
-          <!-- Tier 1: Starter -->
-          <div class="col-lg-3 col-md-6 reveal-on-scroll">
-            <div class="pricing-card">
-              <span class="pricing-tier-tag">Foundation</span>
-              <h3 class="h4 mt-1">Starter Plan</h3>
-              <p class="text-secondary small mb-3">Best for startups, solo operators, and small businesses needing an authoritative web presence fast.</p>
-              
-              <div class="pricing-price-wrap">
-                <div class="pricing-price"><span class="pricing-currency">From </span>$299</div>
-                <span class="pricing-period">one-time investment</span>
-              </div>
-              
-              <ul class="pricing-features-list">
-                <li><i class="bi bi-check2"></i> Multi-page responsive website</li>
-                <li><i class="bi bi-check2"></i> Clean HTML5 / CSS3 / Vanilla JS</li>
-                <li><i class="bi bi-check2"></i> Mobile-first responsive optimization</li>
-                <li><i class="bi bi-check2"></i> Basic on-page SEO setup</li>
-                <li><i class="bi bi-check2"></i> Contact &amp; WhatsApp CTA integration</li>
-                <li><i class="bi bi-check2"></i> Fast deployment to hosting / Vercel</li>
-                <li><i class="bi bi-check2"></i> 14 days post-launch support</li>
-              </ul>
-
-              <a href="contact.html?plan=starter" class="btn-brionex-secondary w-100 text-center mt-auto">Get Started</a>
-            </div>
-          </div>
-
-          <!-- Tier 2: Business -->
-          <div class="col-lg-3 col-md-6 reveal-on-scroll">
-            <div class="pricing-card featured">
-              <span class="pricing-popular-badge">Most Popular</span>
-              <span class="pricing-tier-tag">Growth Engine</span>
-              <h3 class="h4 mt-1">Business Plan</h3>
-              <p class="text-secondary small mb-3">Comprehensive digital foundation for established companies, commercial firms, and growing B2B enterprises.</p>
-              
-              <div class="pricing-price-wrap">
-                <div class="pricing-price"><span class="pricing-currency">From </span>$699</div>
-                <span class="pricing-period">one-time investment</span>
-              </div>
-
-              <ul class="pricing-features-list">
-                <li><i class="bi bi-check2"></i> Everything in Starter Plan</li>
-                <li><i class="bi bi-check2"></i> Bespoke UI/UX editorial layout</li>
-                <li><i class="bi bi-check2"></i> Advanced technical SEO &amp; Schema</li>
-                <li><i class="bi bi-check2"></i> Interactive components &amp; animations</li>
-                <li><i class="bi bi-check2"></i> Speed tuning (95+ Core Web Vitals)</li>
-                <li><i class="bi bi-check2"></i> Lead-capture and form validation</li>
-                <li><i class="bi bi-check2"></i> 30 days dedicated support</li>
-              </ul>
-
-              <a href="contact.html?plan=business" class="btn-brionex-primary w-100 text-center mt-auto">Get Started</a>
-            </div>
-          </div>
-
-          <!-- Tier 3: Professional -->
-          <div class="col-lg-3 col-md-6 reveal-on-scroll">
-            <div class="pricing-card">
-              <span class="pricing-tier-tag">High Impact</span>
-              <h3 class="h4 mt-1">Professional</h3>
-              <p class="text-secondary small mb-3">Best for companies scaling multi-market campaigns, custom portals, or redesign overhauls.</p>
-              
-              <div class="pricing-price-wrap">
-                <div class="pricing-price"><span class="pricing-currency">From </span>$1,299</div>
-                <span class="pricing-period">one-time investment</span>
-              </div>
-
-              <ul class="pricing-features-list">
-                <li><i class="bi bi-check2"></i> Everything in Business Plan</li>
-                <li><i class="bi bi-check2"></i> Brand identity guidelines integration</li>
-                <li><i class="bi bi-check2"></i> Full website redesign migration</li>
-                <li><i class="bi bi-check2"></i> Multi-service catalog architectures</li>
-                <li><i class="bi bi-check2"></i> CRM &amp; email marketing automations</li>
-                <li><i class="bi bi-check2"></i> Advanced performance caching</li>
-                <li><i class="bi bi-check2"></i> 60 days priority support</li>
-              </ul>
-
-              <a href="contact.html?plan=professional" class="btn-brionex-secondary w-100 text-center mt-auto">Get Started</a>
-            </div>
-          </div>
-
-          <!-- Tier 4: Custom Solutions -->
-          <div class="col-lg-3 col-md-6 reveal-on-scroll">
-            <div class="pricing-card">
-              <span class="pricing-tier-tag">Tailored Engineering</span>
-              <h3 class="h4 mt-1">Custom Scope</h3>
-              <p class="text-secondary small mb-3">Tailored for complex web apps, mobile apps (iOS/Android), and enterprise platforms.</p>
-              
-              <div class="pricing-price-wrap">
-                <div class="pricing-price pricing-price-custom">Let's talk</div>
-                <span class="pricing-period">tailored project scope</span>
-              </div>
-
-              <ul class="pricing-features-list">
-                <li><i class="bi bi-check2"></i> Custom web app or mobile architecture</li>
-                <li><i class="bi bi-check2"></i> Dedicated database design (MySQL, Mongo)</li>
-                <li><i class="bi bi-check2"></i> REST API &amp; third-party service sync</li>
-                <li><i class="bi bi-check2"></i> Role-based user authentication (RBAC)</li>
-                <li><i class="bi bi-check2"></i> High-availability cloud deployment</li>
-                <li><i class="bi bi-check2"></i> SLA maintenance &amp; code ownership</li>
-              </ul>
-
-              <a href="contact.html?plan=custom" class="btn-brionex-secondary w-100 text-center mt-auto">Get Started</a>
             </div>
           </div>
         </div>
 
         <div class="text-center mt-5 reveal-on-scroll">
-          <a href="pricing.html" class="fw-bold text-accent d-inline-flex align-items-center gap-2">
-            View Complete Pricing Breakdown &amp; Plan Comparison <i class="bi bi-arrow-right"></i>
+          <a href="services.html" class="btn-secondary">
+            View All Services <i class="bi bi-arrow-right"></i>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- FAQ ACCORDION PREVIEW -->
-    <section class="section-py section-light" id="faqs">
+    <!-- 4. FEATURED PROJECTS (Alternating Rows) -->
+    <section class="home-section-py" style="background-color: #0D120D;" id="projects">
       <div class="container">
-        <div class="section-header text-center reveal-on-scroll">
-          <span class="badge-tag"><i class="bi bi-question-circle"></i> Got Questions?</span>
-          <h2>Frequently Asked <span class="text-gradient">Questions</span></h2>
-          <p class="lead text-secondary mt-3">Clear, transparent answers regarding our development process, milestone billing, timelines, and guarantees.</p>
+        <div class="home-section-header text-center reveal-on-scroll">
+          <span class="home-badge"><i class="bi bi-folder-check"></i> Proven Results</span>
+          <h2>Featured Client <span class="text-gradient-lime">Projects</span></h2>
+          <p class="lead mt-3">Explore websites engineered and launched live for real businesses.</p>
+        </div>
+
+        <!-- Project 1: MJD Funding (Image Left, Text Right) -->
+        <div class="home-project-card reveal-on-scroll">
+          <div class="row g-0 align-items-center">
+            <div class="col-lg-7">
+              <div class="home-browser-frame">
+                <div class="home-browser-bar">
+                  <div class="home-browser-dots" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="home-browser-address">https://mjdfunding.vercel.app</div>
+                </div>
+                <div class="home-browser-image-wrap">
+                  <img src="assets/images/funding-project.png" alt="MJD Funding financial solutions website screenshot" width="1345" height="626" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="home-project-info">
+                <span class="home-project-pill">Financial Services</span>
+                <h3 class="home-project-title">MJD Funding</h3>
+                <p class="home-project-result">
+                  A modern commercial platform built for a US financial firm, designed to present funding options with clarity and convert visitors into qualified inquiries.
+                </p>
+                <div class="home-project-actions">
+                  <a href="mjd-funding.html" class="btn-primary" style="height:42px;min-height:42px;padding:0 1.25rem;font-size:0.88rem;">
+                    View Case Study <i class="bi bi-arrow-right"></i>
+                  </a>
+                  <a href="https://mjdfunding.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="height:42px;min-height:42px;padding:0 1.25rem;font-size:0.88rem;">
+                    Visit Live Site <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Mel The Master Barber (Text Left, Image Right) -->
+        <div class="home-project-card reveal-on-scroll">
+          <div class="row g-0 align-items-center flex-lg-row-reverse">
+            <div class="col-lg-7">
+              <div class="home-browser-frame">
+                <div class="home-browser-bar">
+                  <div class="home-browser-dots" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="home-browser-address">www.melthemasterbarber.com</div>
+                </div>
+                <div class="home-browser-image-wrap">
+                  <img src="assets/images/melthemasterbarber.png" alt="Mel The Master Barber barbershop website screenshot" width="1342" height="641" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="home-project-info">
+                <span class="home-project-pill">Grooming &amp; Barbershop</span>
+                <h3 class="home-project-title">Mel The Master Barber</h3>
+                <p class="home-project-result">
+                  A mobile-first website for a premier UK barber, featuring visual service menus, customer reviews, and direct booking integration for daily clients.
+                </p>
+                <div class="home-project-actions">
+                  <a href="mel-the-master-barber.html" class="btn-primary" style="height:42px;min-height:42px;padding:0 1.25rem;font-size:0.88rem;">
+                    View Case Study <i class="bi bi-arrow-right"></i>
+                  </a>
+                  <a href="https://www.melthemasterbarber.com" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="height:42px;min-height:42px;padding:0 1.25rem;font-size:0.88rem;">
+                    Visit Live Site <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Sitara Event Complex (Image Left, Text Right) -->
+        <div class="home-project-card reveal-on-scroll">
+          <div class="row g-0 align-items-center">
+            <div class="col-lg-7">
+              <div class="home-browser-frame">
+                <div class="home-browser-bar">
+                  <div class="home-browser-dots" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="home-browser-address">https://sitaraevenetcomplex01.vercel.app</div>
+                </div>
+                <div class="home-browser-image-wrap">
+                  <img src="assets/images/sitara-project.png" alt="Sitara Event Complex hospitality website screenshot" width="1335" height="637" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="home-project-info">
+                <span class="home-project-pill">Events &amp; Hospitality</span>
+                <h3 class="home-project-title">Sitara Event Complex</h3>
+                <p class="home-project-result">
+                  An elegant digital presence showcasing banquet halls, pricing packages, and gallery media to help families and event organizers book with confidence.
+                </p>
+                <div class="home-project-actions">
+                  <a href="sitara-event-complex.html" class="btn-primary" style="height:42px;min-height:42px;padding:0 1.25rem;font-size:0.88rem;">
+                    View Case Study <i class="bi bi-arrow-right"></i>
+                  </a>
+                  <a href="https://sitaraevenetcomplex01.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="height:42px;min-height:42px;padding:0 1.25rem;font-size:0.88rem;">
+                    Visit Live Site <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4 reveal-on-scroll">
+          <a href="projects.html" class="btn-secondary">
+            View All Projects <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PROCESS SECTION (4 Steps with Connecting Line) -->
+    <section class="home-section-py" id="process">
+      <div class="container">
+        <div class="home-section-header text-center reveal-on-scroll">
+          <span class="home-badge"><i class="bi bi-diagram-3"></i> How We Work</span>
+          <h2>Our Proven <span class="text-gradient-lime">Process</span></h2>
+          <p class="lead mt-3">From first conversation to live deployment — organized, predictable, and fast.</p>
+        </div>
+
+        <div class="row g-4 home-process-row reveal-on-scroll">
+          <!-- Step 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="home-process-card">
+              <div class="home-process-bubble">
+                <span class="home-process-num">01</span>
+              </div>
+              <h3 class="home-process-title">Discover</h3>
+              <p class="home-process-desc">We learn your business goals, target audience, and functional requirements in a focused kickoff session.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="home-process-card">
+              <div class="home-process-bubble">
+                <span class="home-process-num">02</span>
+              </div>
+              <h3 class="home-process-title">Strategize</h3>
+              <p class="home-process-desc">We map out user flows, architecture, and clickable design wireframes before writing a line of code.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="home-process-card">
+              <div class="home-process-bubble">
+                <span class="home-process-num">03</span>
+              </div>
+              <h3 class="home-process-title">Build</h3>
+              <p class="home-process-desc">Our engineers write clean, standards-compliant code with continuous testing across devices and browsers.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="home-process-card">
+              <div class="home-process-bubble">
+                <span class="home-process-num">04</span>
+              </div>
+              <h3 class="home-process-title">Launch &amp; Support</h3>
+              <p class="home-process-desc">We deploy to secure hosting, verify search engine indexing, and provide dedicated post-launch support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. TESTIMONIALS SECTION (3 Cards) -->
+    <section class="home-section-py" style="background-color: #0D120D;" id="testimonials">
+      <div class="container">
+        <div class="home-section-header text-center reveal-on-scroll">
+          <span class="home-badge"><i class="bi bi-chat-square-quote"></i> Client Feedback</span>
+          <h2>What Clients Say About <span class="text-gradient-lime">Brionex</span></h2>
+          <p class="lead mt-3">Direct feedback from business owners and teams we have partnered with.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Testimonial 1 -->
+          <div class="col-md-4 reveal-on-scroll">
+            <div class="home-testimonial-card">
+              <div class="home-testimonial-stars" aria-label="5 out of 5 stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="home-testimonial-quote">
+                "Brionex delivered a modern, fast website for MJD Funding that reflects our financial services brand with high credibility. Communication was clear throughout the project."
+              </p>
+              <div class="home-testimonial-author">
+                <div class="home-testimonial-avatar" aria-hidden="true">M</div>
+                <div>
+                  <div class="home-testimonial-name">MJD Funding Team</div>
+                  <div class="home-testimonial-role">Financial Services — USA</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="col-md-4 reveal-on-scroll">
+            <div class="home-testimonial-card">
+              <div class="home-testimonial-stars" aria-label="5 out of 5 stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="home-testimonial-quote">
+                "The team was responsive and understood our goals immediately. Our barbershop website looks sharp on mobile and makes booking simple for customers."
+              </p>
+              <div class="home-testimonial-author">
+                <div class="home-testimonial-avatar" aria-hidden="true">L</div>
+                <div>
+                  <div class="home-testimonial-name">Mel The Master Barber</div>
+                  <div class="home-testimonial-role">Grooming &amp; Barbershop — UK</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="col-md-4 reveal-on-scroll">
+            <div class="home-testimonial-card">
+              <div class="home-testimonial-stars" aria-label="5 out of 5 stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="home-testimonial-quote">
+                "Sitara Event Complex now has an elegant digital presence that drives real booking inquiries. Brionex handled architecture, design, and deployment professionally."
+              </p>
+              <div class="home-testimonial-author">
+                <div class="home-testimonial-avatar" aria-hidden="true">S</div>
+                <div>
+                  <div class="home-testimonial-name">Sitara Event Complex</div>
+                  <div class="home-testimonial-role">Events &amp; Hospitality — Pakistan</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PRICING TEASER (Light Section #F7FAF2 for Contrast) -->
+    <section class="home-section-py home-pricing-section" id="pricing">
+      <div class="container">
+        <div class="home-section-header text-center reveal-on-scroll">
+          <span class="home-badge"><i class="bi bi-tag-fill"></i> Pricing</span>
+          <h2>Simple, Transparent <span style="color:#2D5A0D;">Packages</span></h2>
+          <p class="lead mt-3">Structured, milestone-based pricing with full source code ownership. No surprise fees.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Starter Plan -->
+          <div class="col-md-6 col-lg-4 reveal-on-scroll">
+            <div class="home-pricing-card">
+              <h3>Starter Plan</h3>
+              <p class="small mb-3">Best for startups and small businesses needing an authoritative web presence fast.</p>
+              
+              <div class="home-pricing-price">From $299</div>
+              <span class="home-pricing-period">one-time investment</span>
+
+              <ul class="home-pricing-features">
+                <li><i class="bi bi-check2-circle"></i> Multi-page responsive website</li>
+                <li><i class="bi bi-check2-circle"></i> Mobile-first architecture</li>
+                <li><i class="bi bi-check2-circle"></i> Core SEO and meta tags setup</li>
+                <li><i class="bi bi-check2-circle"></i> Contact form &amp; WhatsApp integration</li>
+                <li><i class="bi bi-check2-circle"></i> Fast cloud deployment</li>
+                <li><i class="bi bi-check2-circle"></i> 14 days post-launch support</li>
+              </ul>
+
+              <a href="contact.html?plan=starter" class="btn-secondary w-100 text-center mt-auto">
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          <!-- Business Plan (Most Popular) -->
+          <div class="col-md-6 col-lg-4 reveal-on-scroll">
+            <div class="home-pricing-card featured">
+              <span class="home-popular-pill">Most Popular</span>
+              <h3>Business Plan</h3>
+              <p class="small mb-3">Comprehensive digital foundation for growing commercial companies.</p>
+              
+              <div class="home-pricing-price">From $699</div>
+              <span class="home-pricing-period">one-time investment</span>
+
+              <ul class="home-pricing-features">
+                <li><i class="bi bi-check2-circle"></i> Everything in Starter Plan</li>
+                <li><i class="bi bi-check2-circle"></i> Bespoke UI/UX design kit</li>
+                <li><i class="bi bi-check2-circle"></i> Advanced technical SEO &amp; Schema</li>
+                <li><i class="bi bi-check2-circle"></i> Interactive components &amp; filters</li>
+                <li><i class="bi bi-check2-circle"></i> Speed optimization (90+ Web Vitals)</li>
+                <li><i class="bi bi-check2-circle"></i> 30 days dedicated support</li>
+              </ul>
+
+              <a href="contact.html?plan=business" class="btn-primary w-100 text-center mt-auto">
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          <!-- Custom Scope -->
+          <div class="col-md-6 col-lg-4 reveal-on-scroll">
+            <div class="home-pricing-card">
+              <h3>Custom Scope</h3>
+              <p class="small mb-3">Tailored for complex web apps, iOS/Android mobile apps, and custom software.</p>
+              
+              <div class="home-pricing-price" style="font-size: 1.85rem;">Let's talk</div>
+              <span class="home-pricing-period">tailored project scope</span>
+
+              <ul class="home-pricing-features">
+                <li><i class="bi bi-check2-circle"></i> Custom web app or mobile app</li>
+                <li><i class="bi bi-check2-circle"></i> Dedicated database architecture</li>
+                <li><i class="bi bi-check2-circle"></i> Third-party API &amp; CRM sync</li>
+                <li><i class="bi bi-check2-circle"></i> Role-based access control (RBAC)</li>
+                <li><i class="bi bi-check2-circle"></i> High-availability deployment</li>
+                <li><i class="bi bi-check2-circle"></i> SLA maintenance &amp; full IP transfer</li>
+              </ul>
+
+              <a href="contact.html?plan=custom" class="btn-secondary w-100 text-center mt-auto">
+                Get Started
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5 reveal-on-scroll">
+          <a href="pricing.html" class="btn-secondary">
+            See Full Pricing <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. MINI FAQ (3 Questions) -->
+    <section class="home-section-py" id="faqs">
+      <div class="container">
+        <div class="home-section-header text-center reveal-on-scroll">
+          <span class="home-badge"><i class="bi bi-question-circle"></i> Common Questions</span>
+          <h2>Frequently Asked <span class="text-gradient-lime">Questions</span></h2>
+          <p class="lead mt-3">Quick answers to common questions before starting a project.</p>
         </div>
 
         <div class="row justify-content-center">
-          <div class="col-lg-9 reveal-on-scroll">
-            <div class="accordion accordion-brionex" id="homeFaqAccordion">
+          <div class="col-lg-8 reveal-on-scroll">
+            <div class="accordion" id="homeMiniFaq">
               
               <!-- Q1 -->
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    What does Brionex Technologies specialize in?
+              <div class="home-faq-item">
+                <h3 class="mb-0">
+                  <button class="home-faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                    <span>What types of projects do you take on?</span>
+                    <i class="bi bi-chevron-down ms-2"></i>
                   </button>
                 </h3>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#homeFaqAccordion">
-                  <div class="accordion-body">
-                    We specialize in end-to-end digital engineering: high-converting commercial website design and development, mobile applications (iOS and Android), bespoke custom software and client portals, website redesigns and performance overhauls, search engine optimization (SEO), and corporate brand identity systems.
+                <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#homeMiniFaq">
+                  <div class="home-faq-body">
+                    We design and develop high-converting commercial websites, iOS and Android mobile applications, custom web portals, and website redesigns. Whether you need a 5-page business site or a custom SaaS platform, our team handles design, engineering, and deployment.
                   </div>
                 </div>
               </div>
 
               <!-- Q2 -->
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    How does milestone-based pricing and payment work?
+              <div class="home-faq-item">
+                <h3 class="mb-0">
+                  <button class="home-faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                    <span>How does your pricing and payment schedule work?</span>
+                    <i class="bi bi-chevron-down ms-2"></i>
                   </button>
                 </h3>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#homeFaqAccordion">
-                  <div class="accordion-body">
-                    We operate with complete commercial transparency. Every project begins with a clear, fixed-price scope contract broken into structured milestones (for example: 40% initial deposit upon discovery sign-off, 30% upon interactive prototype approval, and 30% upon quality testing and deployment). You only approve payments as deliverables are demonstrated.
+                <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#homeMiniFaq">
+                  <div class="home-faq-body">
+                    We quote fixed-price project contracts with clear, milestone-based invoicing (typically 40% upon design approval, 30% during build, and 30% upon final testing and launch). You only pay as demonstrated progress is delivered.
                   </div>
                 </div>
               </div>
 
               <!-- Q3 -->
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    How long does a website or custom software project take to complete?
+              <div class="home-faq-item">
+                <h3 class="mb-0">
+                  <button class="home-faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                    <span>How long does a typical project take from start to launch?</span>
+                    <i class="bi bi-chevron-down ms-2"></i>
                   </button>
                 </h3>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#homeFaqAccordion">
-                  <div class="accordion-body">
-                    Standard business websites typically launch within 2 to 4 weeks depending on the number of pages and content readiness. Custom web applications, e-commerce platforms, and comprehensive software solutions typically require 4 to 8 weeks, guided by agile sprints with weekly demos and milestone progress reports.
-                  </div>
-                </div>
-              </div>
-
-              <!-- Q4 -->
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Will my website be fast, secure, and mobile-friendly?
-                  </button>
-                </h3>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#homeFaqAccordion">
-                  <div class="accordion-body">
-                    Yes, without exception. We build every project using semantic, mobile-first code, compressed assets, SSL security standards, and strict optimization practices to achieve 90+ Google Core Web Vitals scores and fluid responsiveness across every device and browser size.
-                  </div>
-                </div>
-              </div>
-
-              <!-- Q5 -->
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Do I own the code and design assets after project launch?
-                  </button>
-                </h3>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#homeFaqAccordion">
-                  <div class="accordion-body">
-                    Yes. Upon completion and final payment, you retain 100% full intellectual property and source code ownership. We deliver all production files, design assets, and administrative credentials. We never charge mandatory subscription lock-ins or keep your assets hostage.
-                  </div>
-                </div>
-              </div>
-
-              <!-- Q6 -->
-              <div class="accordion-item">
-                <h3 class="accordion-header" id="headingSix">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    How do we get started on a project?
-                  </button>
-                </h3>
-                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#homeFaqAccordion">
-                  <div class="accordion-body">
-                    Getting started is straightforward: click "Start Your Project" to submit your project requirements via our contact form, or message us directly on WhatsApp (+92 317 0658553). We will review your goals, conduct a focused discovery consultation within 24 hours, and provide an itemized proposal with clear milestones and deliverables.
+                <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#homeMiniFaq">
+                  <div class="home-faq-body">
+                    Standard business websites typically take 2 to 4 weeks depending on content readiness. Custom web applications and comprehensive software solutions typically require 4 to 8 weeks, organized into weekly sprint milestones.
                   </div>
                 </div>
               </div>
 
             </div>
 
-            <div class="text-center mt-5">
-              <a href="faqs.html" class="fw-bold text-accent d-inline-flex align-items-center gap-2">
+            <div class="text-center mt-4">
+              <a href="faqs.html" class="home-service-link fw-semibold">
                 Have more questions? Read our full FAQ directory <i class="bi bi-arrow-right"></i>
               </a>
             </div>
@@ -920,17 +703,17 @@
       </div>
     </section>
 
-    <!-- FINAL CALL TO ACTION -->
-    <section class="section-py">
+    <!-- 9. FINAL CALL TO ACTION -->
+    <section class="home-section-py pt-0">
       <div class="container">
-        <div class="cta-banner reveal-on-scroll">
-          <span class="badge-tag mb-3"><i class="bi bi-rocket-takeoff-fill"></i> Initiate Your Digital Expansion</span>
-          <h2 class="display-5 fw-bold mb-3">Let's Build Something <span class="text-gradient">Exceptional.</span></h2>
-          <p class="lead text-secondary mx-auto mb-4" style="max-width: 640px;">
-            Partner with an engineering team dedicated to your business success. Contact us today for a free discovery consultation.
+        <div class="home-cta-banner reveal-on-scroll">
+          <span class="home-badge mb-3"><i class="bi bi-rocket-takeoff-fill"></i> Get Started Today</span>
+          <h2 class="display-5 fw-bold mb-3">Let's Build Something <span class="text-gradient-lime">Exceptional.</span></h2>
+          <p class="lead mx-auto mb-4" style="max-width: 580px; color: #D4D9CF;">
+            Partner with an engineering team dedicated to your business success. Get in touch today for a free discovery consultation.
           </p>
           <div class="d-flex flex-wrap justify-content-center gap-3">
-            <a href="contact.html" class="btn-brionex-primary">
+            <a href="contact.html" class="btn-primary">
               Start Your Project <i class="bi bi-arrow-right"></i>
             </a>
             <a href="https://wa.me/923170658553" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
@@ -943,17 +726,17 @@
 
   </main>
 
-    <!-- ==================== GLOBAL FOOTER ==================== -->
+  <!-- ==================== GLOBAL FOOTER ==================== -->
   <footer class="footer-brionex" role="contentinfo">
     <div class="container">
       <div class="row g-4 g-lg-5">
         <!-- Col 1: Brand & Socials -->
         <div class="col-lg-4 col-md-6">
-          <a href="index.html" class="d-inline-block mb-3">
+          <a href="/" class="d-inline-block mb-3" aria-label="Brionex Technologies Home">
             <img src="assets/images/logo.svg" alt="Brionex Technologies" width="190" height="44">
           </a>
           <p class="text-secondary small mb-3">
-            Brionex Technologies is an international digital solutions and technology agency helping businesses build modern digital experiences and grow through technology.
+            Brionex Technologies is an international digital solutions agency helping businesses build modern digital experiences and grow through technology.
           </p>
           <div class="social-icons-wrapper">
             <a href="https://facebook.com/brionextechnologies" class="social-icon-btn social-fb" target="_blank" rel="noopener noreferrer" aria-label="Follow Brionex on Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
@@ -964,11 +747,11 @@
           </div>
         </div>
 
-        <!-- Col 2: Quick Links (with > before every link) -->
+        <!-- Col 2: Quick Links -->
         <div class="col-lg-2 col-md-6 col-6">
           <h5 class="footer-heading">Quick Links</h5>
           <ul class="footer-links">
-            <li><a href="index.html"><span class="footer-arrow">&gt;</span> Home</a></li>
+            <li><a href="/"><span class="footer-arrow">&gt;</span> Home</a></li>
             <li><a href="about.html"><span class="footer-arrow">&gt;</span> About Us</a></li>
             <li><a href="services.html"><span class="footer-arrow">&gt;</span> Our Services</a></li>
             <li><a href="projects.html"><span class="footer-arrow">&gt;</span> Projects</a></li>
@@ -978,7 +761,7 @@
           </ul>
         </div>
 
-        <!-- Col 3: Services (with > before every link) -->
+        <!-- Col 3: Services -->
         <div class="col-lg-3 col-md-6 col-6">
           <h5 class="footer-heading">Our Services</h5>
           <ul class="footer-links">
@@ -1039,7 +822,7 @@
     </div>
   </footer>
 
-  <!-- Floating Sticky WhatsApp Button ONLY -->
+  <!-- Floating Sticky WhatsApp Button -->
   <a href="https://wa.me/923170658553" class="floating-whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
     <i class="bi bi-whatsapp"></i>
     <span class="floating-whatsapp-tooltip">Chat on WhatsApp</span>
@@ -1047,7 +830,9 @@
 
   <!-- Bootstrap 5 Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
+  <!-- Shared JS -->
   <script src="assets/js/main.js"></script>
+  <!-- Homepage Dedicated JS -->
+  <script src="assets/js/home.js"></script>
 </body>
 </html>

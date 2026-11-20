@@ -19,6 +19,120 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 
+  <style>
+    /* Projects Showcase - Complete Image & Browser Frame Styling */
+    .card-brionex {
+      background: #121712 !important;
+      border: 1px solid #1F2A1F !important;
+      border-radius: 16px !important;
+      overflow: hidden !important;
+      transition: transform 250ms ease, border-color 250ms ease, box-shadow 250ms ease !important;
+    }
+    .card-brionex:hover {
+      transform: translateY(-4px) !important;
+      border-color: rgba(163, 230, 53, 0.35) !important;
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.65), 0 0 30px rgba(163, 230, 53, 0.1) !important;
+    }
+    .project-browser-frame {
+      position: relative;
+      background: #0A0D0B;
+      overflow: hidden;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    @media (max-width: 991.98px) {
+      .project-browser-frame {
+        border-bottom: 1px solid #1F2A1F;
+      }
+    }
+    @media (min-width: 992px) {
+      .card-brionex .row.g-0 .col-lg-6:first-child .project-browser-frame {
+        border-right: 1px solid #1F2A1F;
+      }
+      .card-brionex .row.g-0.flex-lg-row-reverse .col-lg-6:first-child .project-browser-frame {
+        border-left: 1px solid #1F2A1F;
+      }
+    }
+    .project-browser-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.65rem 1rem;
+      background: #141A14;
+      border-bottom: 1px solid #1F2A1F;
+      flex-shrink: 0;
+    }
+    .project-browser-dots {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .project-browser-dots span {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .project-browser-dots span:nth-child(1) { background: #FF5F56; }
+    .project-browser-dots span:nth-child(2) { background: #FFBD2E; }
+    .project-browser-dots span:nth-child(3) { background: #27C93F; }
+    .project-browser-address {
+      margin-left: 0.75rem;
+      padding: 0.2rem 0.85rem;
+      border-radius: 6px;
+      background: #0A0D0B;
+      color: #8A9A8A;
+      font-size: 0.76rem;
+      font-family: monospace;
+      flex: 1;
+      max-width: 320px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: color 200ms ease, border-color 200ms ease;
+    }
+    .card-brionex:hover .project-browser-address {
+      color: #A3E635;
+      border-color: rgba(163, 230, 53, 0.3);
+    }
+    .project-browser-image-wrap {
+      position: relative;
+      overflow: hidden;
+      background: #0A0D0B;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .project-browser-image-wrap img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      display: block;
+      object-fit: contain;
+      object-position: center top;
+      transition: filter 300ms ease;
+    }
+    .card-brionex:hover .project-browser-image-wrap img {
+      filter: brightness(1.03);
+    }
+    .project-category-badge {
+      display: inline-block;
+      padding: 0.25rem 0.85rem;
+      border-radius: 9999px;
+      background: rgba(163, 230, 53, 0.08);
+      border: 1px solid rgba(163, 230, 53, 0.25);
+      color: #A3E635;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.85rem;
+    }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -110,12 +224,20 @@
         <div class="card-brionex mb-5 p-0 overflow-hidden reveal-on-scroll">
           <div class="row g-0 align-items-center">
             <div class="col-lg-6">
-              <div class="project-card-image" style="aspect-ratio: 16/10;">
-                <img src="assets/images/project-mjd.svg" alt="MJD Funding Website Interface" loading="lazy">
-                <span class="project-badge-pill">Financial Services</span>
+              <div class="project-browser-frame">
+                <div class="project-browser-bar">
+                  <div class="project-browser-dots" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="project-browser-address">https://mjdfunding.vercel.app</div>
+                </div>
+                <div class="project-browser-image-wrap">
+                  <img src="assets/images/funding-project.png" alt="MJD Funding Website Interface" width="1345" height="626" loading="lazy">
+                </div>
               </div>
             </div>
             <div class="col-lg-6 p-4 p-md-5">
+              <span class="project-category-badge">Financial Services</span>
               <div class="d-flex align-items-center gap-2 mb-2 text-muted small">
                 <i class="bi bi-globe2 text-accent"></i> Commercial Production Website
               </div>
@@ -144,12 +266,20 @@
         <div class="card-brionex mb-5 p-0 overflow-hidden reveal-on-scroll">
           <div class="row g-0 align-items-center flex-lg-row-reverse">
             <div class="col-lg-6">
-              <div class="project-card-image" style="aspect-ratio: 16/10;">
-                <img src="assets/images/project-mel.svg" alt="Mel The Master Barber Website Interface" loading="lazy">
-                <span class="project-badge-pill">Barbershop &amp; Grooming</span>
+              <div class="project-browser-frame">
+                <div class="project-browser-bar">
+                  <div class="project-browser-dots" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="project-browser-address">www.melthemasterbarber.com</div>
+                </div>
+                <div class="project-browser-image-wrap">
+                  <img src="assets/images/melthemasterbarber.png" alt="Mel The Master Barber Website Interface" width="1342" height="641" loading="lazy">
+                </div>
               </div>
             </div>
             <div class="col-lg-6 p-4 p-md-5">
+              <span class="project-category-badge">Barbershop &amp; Grooming</span>
               <div class="d-flex align-items-center gap-2 mb-2 text-muted small">
                 <i class="bi bi-globe2 text-accent"></i> Modern Small Business Web
               </div>
@@ -166,7 +296,7 @@
                 <a href="mel-the-master-barber.html" class="btn-brionex-primary">
                   Read Full Case Study <i class="bi bi-arrow-right"></i>
                 </a>
-                <a href="https://melthemasterbarber.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-brionex-secondary">
+                <a href="https://www.melthemasterbarber.com" target="_blank" rel="noopener noreferrer" class="btn-brionex-secondary">
                   Open Live Website <i class="bi bi-box-arrow-up-right"></i>
                 </a>
               </div>
@@ -178,12 +308,20 @@
         <div class="card-brionex p-0 overflow-hidden reveal-on-scroll">
           <div class="row g-0 align-items-center">
             <div class="col-lg-6">
-              <div class="project-card-image" style="aspect-ratio: 16/10;">
-                <img src="assets/images/project-sitara.svg" alt="Sitara Event Complex Website Interface" loading="lazy">
-                <span class="project-badge-pill">Events &amp; Hospitality</span>
+              <div class="project-browser-frame">
+                <div class="project-browser-bar">
+                  <div class="project-browser-dots" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="project-browser-address">https://sitaraevenetcomplex01.vercel.app</div>
+                </div>
+                <div class="project-browser-image-wrap">
+                  <img src="assets/images/sitara-project.png" alt="Sitara Event Complex Website Interface" width="1335" height="637" loading="lazy">
+                </div>
               </div>
             </div>
             <div class="col-lg-6 p-4 p-md-5">
+              <span class="project-category-badge">Events &amp; Hospitality</span>
               <div class="d-flex align-items-center gap-2 mb-2 text-muted small">
                 <i class="bi bi-globe2 text-accent"></i> Hospitality &amp; Banqueting
               </div>
